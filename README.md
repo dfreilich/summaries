@@ -6,33 +6,33 @@ Keep crushing it
 ## Completed:
 
 ## WIP:
-* Clean Code (Robert Martin) - [Amazon link](https://www.amazon.com/gp/product/0132350882/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0132350882&linkCode=as2&tag=dfreilich-20&linkId=843e30ff7fe3da070be2b027b7738381), [Summary](CleanCode.md)
+* [Clean Code](https://amzn.to/37kjAOd) (Robert Martin) - [Summary](CleanCode.md)
 
 ## Next Up:
-* Clean Coder (Robert Martin)
+* [Clean Coder](https://amzn.to/38o5blj) (Robert Martin)
 
 ## Library:
-* Refactoring (Martin Fowler)
-* Working Effectively with Legacy Code (Michael Feathers)
-* Design Patterns (Erich Gamma)
-* Design of Everyday Things (Don Norman)
-* Mythical Man Month (Frederick Brooks)
-* Toyota Production System (Taiichi Ohno)
-* Structure and Interpretation of Computer Programs (Harold Abelson)
-* Pragmatic Programmer (David Thomas)
-* Agile Software Development (Robert Martin)
-* Code Complete 2
-* Art of Computer Programming (Donald Knuth)
+* [Refactoring](https://amzn.to/37mS8iT) (Martin Fowler)
+* [Working Effectively with Legacy Code](https://amzn.to/2Hk8vSx) (Michael Feathers)
+* [Design Patterns](https://amzn.to/37nBBek) (Erich Gamma)
+* [Design of Everyday Things](https://amzn.to/37mSvKj) (Don Norman)
+* [Mythical Man Month](https://amzn.to/39wfC6m) (Frederick Brooks)
+* [Toyota Production System](https://amzn.to/2vo00U3) (Taiichi Ohno)
+* [Structure and Interpretation of Computer Programs](https://amzn.to/38xoicZ) (Harold Abelson)
+* [Pragmatic Programmer](https://amzn.to/3bAeBMq) (David Thomas)
+* [Agile Software Development](https://amzn.to/2OQ0Nnz) (Robert Martin)
+* [Code Complete 2](https://amzn.to/2US5scx) (Steve McConnell)
+* [Art of Computer Programming](https://amzn.to/2tR3vBQ) (Donald Knuth)
 
 ## Future Books:
-* Inspired: How to Create Tech Products Customers Love
-* Naked Statistics: Stripping the Dread from the Data
-* Beautiful Evidence
-* Badass: Making Users Awesome
-* Hooked: How to Build Habit-Forming Products
-* Measure What Matters
-* Escaping the Build Trap: How Effective Product Management Creates Real Value
-* Product Leadership: How Top Product Managers Launch Awesome Products and Build Successful Teams
-* Meaningful: The Story of Ideas That Fly
-* Sprint: How to Solve Big Problems and Test New Ideas in Just Five Days
-* Selling Blue Elephants: How to Make Great Products That People Want Before They Even Know They Want Them
+* [Inspired: How to Create Tech Products Customers Love](https://amzn.to/39ri26r) (Marty Cagan)
+* [Naked Statistics: Stripping the Dread from the Data](https://amzn.to/2ONYeSG) (Charles Wheelan)
+* [Hooked: How to Build Habit-Forming Products](https://amzn.to/2HknwnE) (Nir Eyal)
+* [Beautiful Evidence](https://amzn.to/39y7lPl) (Edward Tufte)
+* [Badass: Making Users Awesome](https://amzn.to/38nIGNx) (Kathy Sierra)
+* [Measure What Matters: How Google, Bono, and the Gates Foundation Rock the World with OKRs](https://amzn.to/38mqSCn) (John Doerr)
+* [Escaping the Build Trap: How Effective Product Management Creates Real Value](https://amzn.to/31Oktxb) (	Melissa Perri)
+* [Product Leadership: How Top Product Managers Launch Awesome Products and Build Successful Teams](https://amzn.to/2So7cbQ) (Richard Banfield, Martin Eriksson, Nate Walkingshaw)
+* [Meaningful: The Story of Ideas That Fly](https://amzn.to/2SlUcmU) (Bernadette Jiwa)
+* [Sprint: How to Solve Big Problems and Test New Ideas in Just Five Days](https://amzn.to/2SmlzgC) (Jake Knapp, John Zeratsky, Braden Kowitz)
+* [Selling Blue Elephants: How to Make Great Products That People Want Before They Even Know They Want Them](https://amzn.to/2SFpCDF) (Howard Moskowitz, Alex Gofman)
