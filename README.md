@@ -1,5 +1,5 @@
 # Summaries
-This repo contains summary of key points in books that I have read. If you have any suggestions for future books, leave a PR and I'd love to take a crack at it! If you're a fan of this, and want to buy the book, please use the links below so I get rewarded for it.
+This repo contains summaries of key points in books that I have read. If you have any suggestions for future books, leave a PR and I'd love to take a crack at it! If you're a fan of this, and want to buy the book, please use the links below so I get rewarded for it.
 
 Keep crushing it
 
