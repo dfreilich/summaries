@@ -7,6 +7,7 @@ Table of Contents:
 <!-- toc -->
 
 - [Summary](#summary)
+- [Key Parts:](#key-parts)
 - [Chapter 1: Clean Code](#chapter-1-clean-code)
 - [Chapter 2: Meaningful Names](#chapter-2-meaningful-names)
 - [Chapter 3: Functions](#chapter-3-functions)
@@ -33,6 +34,9 @@ Table of Contents:
 Clean Code is an incredibly rich depiction of best practices in Agile software craftsmanship. Robert Martin, together with a number of other famed Software Engineers and Architects, take you point by point through a vast number of heuristics and best practices in creating good, solid, clean code. Through a number of refactoring exercises, Clean Code tries to teach an art, and show how best to design and continuously improve software products.
 
 > I won't summarize everything throughout the book (there may be some chapters I skip). For example, there are a number of chapters where the authors bring you through some refactoring examples, where a summary just isn't enough.
+
+## Key Parts:
+If you have limited time, and want to get the most value, I would delve deeply into [Chapter 17: Smells and Heuristics](#Chapter-17:-Smells-and-Heuristics), to get a detailed list of all of their compiled best practices in creating so called __*clean code*__.
 
 ## Chapter 1: Clean Code
 ## Chapter 2: Meaningful Names
