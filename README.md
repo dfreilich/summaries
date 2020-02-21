@@ -1,6 +1,6 @@
 <!-- omit in toc -->
 # Summaries
-This repo contains summaries of key points in computer science, and product/data books. If you have any suggestions for future books, create an issue and I'd love to take a crack at it! If you're a fan of this, and want to buy any of the books, please use the links below so I get rewarded for it.
+This repo contains summaries of key points in computer science, and product/data books. If you catch any spelling mistakes, want to add to a summary, or have any suggestions for future books, create an issue and I'd love to take a crack at it! If you're a fan of this, and want to buy any of the books, please use the links below so I get rewarded for it.
 
 Keep crushing it.
 
