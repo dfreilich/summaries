@@ -25,6 +25,7 @@ Table of Contents:
 - [Chapter 15: JUnit Internals](#chapter-15-junit-internals)
 - [Chapter 16: Refactoring SerialDate](#chapter-16-refactoring-serialdate)
 - [Chapter 17: Smells and Heuristics](#chapter-17-smells-and-heuristics)
+- [Best Quotes](#best-quotes)
 
 <!-- tocstop -->
 
@@ -55,3 +56,5 @@ If you have limited time, and want to get the most value, I would delve deeply i
 ## Chapter 15: JUnit Internals
 ## Chapter 16: Refactoring SerialDate
 ## Chapter 17: Smells and Heuristics
+## Best Quotes
+> There is a difference between knowing how the code works, and knowing whether the algorithm will do the job required of it. Being unsure that an algorithm is appropriate is often a fact of life. Being unsure what your code does is just laziness. (Chapter 17, p. 298)
