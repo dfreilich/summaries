@@ -136,9 +136,13 @@ Comments shouldn't hold information that is better held in a different system, l
 #### C2: Obsolete Comment
 Comments get old, irrelevant, and incorrect very quickly. If it become sthat, update it or get rid of it as quickly as possible. __*It is best not to write a comment that will become obsolete.*__
 #### C3: Redundant Comment
+A redundant comment is one that describes something that adequately describes itself. This is especially relevant if one is following [G20](####-G20:-Function-Names-Should-Say-What-They-Do) and [N1](####-N1:-Choose-Descriptive-Names), writing your code with descriptive names for variables and methods.
 
 #### C4: Poorly Written Comment
+If you are going to write a comment, take the time to make sure it is the best comment you can write. __*Use correct grammer and punctuation. Don't ramble. Don't state the obvious. Be brief.*__
+
 #### C5: Commented-Out Code
+If there is commented-out code, __*delete it.*__ Your source code remembers it, if it is critical, and it clogs up your limited attention.
 
 ### Environment
 #### E1: Build Requires More Than One Step
