@@ -56,8 +56,8 @@ Table of Contents:
     - [G14: Feature Envy](#g14-feature-envy)
     - [G15: Selector Arguments](#g15-selector-arguments)
     - [G16: Obscured Intent](#g16-obscured-intent)
-    - [G17: Misiplaced Responsibility](#g17-misiplaced-responsibility)
-    - [G18: Innappropriate Static](#g18-innappropriate-static)
+    - [G17: Misplaced Responsibility](#g17-misplaced-responsibility)
+    - [G18: Inappropriate Static](#g18-inappropriate-static)
     - [G19: Use Explanatory Variables](#g19-use-explanatory-variables)
     - [G20: Function Names Should Say What They Do](#g20-function-names-should-say-what-they-do)
     - [G21: Understand the Algorithm](#g21-understand-the-algorithm)
@@ -146,13 +146,22 @@ If there is commented-out code, __*delete it.*__ Your source code remembers it, 
 
 ### Environment
 #### E1: Build Requires More Than One Step
+Building a project should be a single trivial operation. __*Everything your program needs to run should be available right when you check it out – you should be able to check out the system with one simple command, and then issue one other simple command to build it.*__
+> Correllary: Prefer some other solution to `git submodules`, which can bugs when checking out/building.
 #### E2: Tests Require More Than One Step
+You should be able to run all the unit test with just one simple command, that should be explicitly told to users.
 
 ### Functions
 #### F1: Too Many Arguments
+Functions should have a small number of arguments. __*No argument is best, followed by one, two, and three. More than three is very questionable, and should be avoided with prejudice.*__
 #### F2: Output Arguments
+Output arguments (having your function change something in an object that is solely passed in as an input) are counterintuitive. If your function must change the state of something, have it change the state of the object it is called on.
+> This, to me, is exemplified by the Golang pattern of writing into buffers provided. It allows for extensibility, but it does sometime make it more counterintuitive than not.
 #### F3: Flag Arguments
+If there is a boolean argument, that is a clear indication that the function does more than one thing, violating [G30](####-G30:-Functions-Should-Do-One-Thing).
+
 #### F4: Dead Function
+If a method is never called, it should be deleted, similar to [C5](####-C5:-Commented-Out-Code)
 
 ### General
 #### G1: Multiple Languages in One Source File
@@ -171,8 +180,8 @@ If there is commented-out code, __*delete it.*__ Your source code remembers it, 
 #### G14: Feature Envy
 #### G15: Selector Arguments
 #### G16: Obscured Intent
-#### G17: Misiplaced Responsibility
-#### G18: Innappropriate Static
+#### G17: Misplaced Responsibility
+#### G18: Inappropriate Static
 #### G19: Use Explanatory Variables
 #### G20: Function Names Should Say What They Do
 #### G21: Understand the Algorithm
