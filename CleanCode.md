@@ -165,10 +165,21 @@ If a method is never called, it should be deleted, similar to [C5](####-C5:-Comm
 
 ### General
 #### G1: Multiple Languages in One Source File
+Multiple languages (such as Java, XML, HTML, YAML, JavaDoc, and plain English comments) in a file require more context switching, and make files harder to read. Ideally, a source file should contain only __*one*__ language. Realistically, we may need more, but try to keep it at two.
+
 #### G2: Obvious Behavior is Unimplemented
+A function or class should implement the behavior that a user could reasonably expect. . When that isn't the case, readers and users of the code can no longer depend on their intuition, and must waste time reading the code.
+
 #### G3: Incorrect Behavior at Boundaries
+> "It seems obvious to say that code should behave correctly. The problem is that we seldom realize just how complicated correct behavior is. Developers often write functions that they think will work, and then trust their intuition, rather than going to the effort to prove that their code works in all the corner and boundary cases."
+
+> There is no replacement for due diligence. Every boundary condition, every corner case, every quirk and exception represents something that can confound and elegant and intuitive algorithm. _Don't rely on your intuition._ Look for every boundary condition, and write a test for it.
+
 #### G4: Overridden Safeties
+Turning off compiler warnings, or failing tests, may help you get a build to succeed, but often at the risk of endless debugging sessions, as you mask a more serious issue.
 #### G5: Duplication
+Don't duplicate. This is called the **DRY** (Don't Repeat Yourself) rule by some. Kent Beck made it a core principle of Extreme Programming, calling it: **"Once, and only once."**
+If there is duplication, that means you could be doing something better, perhaps extracting a subroutine, another class, or more. This can either be clumps of identical code, or identical checks (if/else chains).
 #### G6: Code at Wrong Level of Abstraction
 #### G7: Base Classes Depending on Their Derivatives
 #### G8: Too Much Information
@@ -229,3 +240,5 @@ If a method is never called, it should be deleted, similar to [C5](####-C5:-Comm
 
 ## Best Quotes
 > There is a difference between knowing how the code works, and knowing whether the algorithm will do the job required of it. Being unsure that an algorithm is appropriate is often a fact of life. Being unsure what your code does is just laziness. (Chapter 17, p. 298)
+
+> Turning off failing tests and telling yourself you'll get them to pass later is as bad as pretending your credit cards are free money. (Chapter 17, p. 289)
