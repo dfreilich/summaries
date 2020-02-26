@@ -181,7 +181,10 @@ Turning off compiler warnings, or failing tests, may help you get a build to suc
 Don't duplicate. This is called the **DRY** (Don't Repeat Yourself) rule by some. Kent Beck made it a core principle of Extreme Programming, calling it: **"Once, and only once."**
 If there is duplication, that means you could be doing something better, perhaps extracting a subroutine, another class, or more. This can either be clumps of identical code, or identical checks (if/else chains).
 #### G6: Code at Wrong Level of Abstraction
+Try to separate ligher level general concepts from lower level detailed concepts. **This is a hard thing to pin down, and do**. Make sure to separate concerns as much as possible, particularly when using OOP to separate out separate concerns.
+> *Isolating abstractions is one of the hardest things that software developers do, and there is no quick fix when you get it wrong.*
 #### G7: Base Classes Depending on Their Derivatives
+
 #### G8: Too Much Information
 #### G9: Dead Code
 #### G10: Vertical Separation
