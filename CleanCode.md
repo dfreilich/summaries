@@ -182,11 +182,14 @@ Don't duplicate. This is called the **DRY** (Don't Repeat Yourself) rule by some
 If there is duplication, that means you could be doing something better, perhaps extracting a subroutine, another class, or more. This can either be clumps of identical code, or identical checks (if/else chains).
 #### G6: Code at Wrong Level of Abstraction
 Try to separate ligher level general concepts from lower level detailed concepts. **This is a hard thing to pin down, and do**. Make sure to separate concerns as much as possible, particularly when using OOP to separate out separate concerns.
-> *Isolating abstractions is one of the hardest things that software developers do, and there is no quick fix when you get it wrong.*
+> *"Isolating abstractions is one of the hardest things that software developers do, and there is no quick fix when you get it wrong."*
 #### G7: Base Classes Depending on Their Derivatives
-
+This is an example of inheritance done really wrong. We typically partition concepts into base and derivative classes, in order to separate concerns and abstractions (see [G6](####-G6:-Code-at-Wrong-Level-of-Abstraction)). If you see base classes mentioning the names of derivatives, there is an issue (though there are some exceptions)
 #### G8: Too Much Information
+Try to expose as little as you can, while still enabling users to do a lot of functionality.
+> "Well-defined modules have very small interfaces that allow you to do a lot with a little. Poorly defined moduels have wide and deep interfaces that force you to use many different gestures to get simple things done. A well-defined interface doesn't offer very many functions to depend upon, so coupling is low. A poorly defined interface provides lots of functions that you must call, so coupling is high"
 #### G9: Dead Code
+Delete any code that isn't executed, particularly in logical branches that will never occur (`if`s, `try/catches`, or `switch/case` statements)
 #### G10: Vertical Separation
 #### G11: Inconsistency
 #### G12: Clutter
