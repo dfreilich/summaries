@@ -75,7 +75,7 @@ Table of Contents:
     - [G33: Encapsulate Boundary Conditions](#g33-encapsulate-boundary-conditions)
     - [G34: Functions Should Descend Only 1 Level of Abstraction](#g34-functions-should-descend-only-1-level-of-abstraction)
     - [G35: Keep Confugrable Data at High Levels](#g35-keep-confugrable-data-at-high-levels)
-    - [G36: Avoid Transitive Navigation](#g36-avoid-transitive-navigation)
+    - [G36: Avoid Transitive Navigation (Law of Demeter/Shy Code)](#g36-avoid-transitive-navigation-law-of-demetershy-code)
   - [Java](#java)
     - [J1: Avoid Long Import Lists by Using Wildards](#j1-avoid-long-import-lists-by-using-wildards)
     - [J2: Don't Inherit Constants](#j2-dont-inherit-constants)
@@ -191,33 +191,65 @@ Try to expose as little as you can, while still enabling users to do a lot of fu
 #### G9: Dead Code
 Delete any code that isn't executed, particularly in logical branches that will never occur (`if`s, `try/catches`, or `switch/case` statements)
 #### G10: Vertical Separation
+"Variables and functions should be defined close to where they are used. Local variables should be declared just above their first usage"
 #### G11: Inconsistency
+If you do something a certain way, even in a typical name you give a variable (eg. `response` to hold a `__Response` object), do all similar things in the same way. Be careful with the conventions you choose, and once chosen, be careful to continue following them. Consistency like that, when applied reliably, can make your code much easier to read and modify.
 #### G12: Clutter
+Delete variables that aren't used, functions that are never called, comments that add no information, and so forth. ***Keep your source files clean, well organized, and free of clutter.*** (this is very related to [C3](####-C3:-Redundant-Comment), [C5](####-C5:-Commented-Out-Code), [F4](####-F4:-Dead-Function), and [G9](####-G9:-Dead-Code))
 #### G13: Artificial Coupling
+An artificial coupling is a coupling between two modules that serves no direct purpose. For instance, if you define a general enum, don't have it in a more specific class. Take the time to figure out where functions, constants, and variables should be declared.
 #### G14: Feature Envy
+The methods of a class should be interested in the variables and functions of the class they belong to, and not the variables and functions of other classes. Sometimes, however Feature Envy is a necessary evil.
 #### G15: Selector Arguments
+If you can select what behavior you want by changing an argument, something may be off. "Selector arguments are just a lazy way to avoid splitting a large function into several smaller functions." This is very related to [F3](####-F3:-Flag-Arguments)
 #### G16: Obscured Intent
+Make your code as clear and expressive as you can. It is worth taking the time to make the intent of our code visible to our readers through the code itself, instead of obscuring our intent.
 #### G17: Misplaced Responsibility
+Code should go in the most intuitive place, where the reader would naturally expect it to be, and not necessarily where is most convenient for us.
 #### G18: Inappropriate Static
+Static functions are useful, but you should prefer nonstatic methods to static methods. If you really want a function to be static, make sure that there is no chance that you'll want it to behave polymorphically.
 #### G19: Use Explanatory Variables
+One of the more powerful ways to make a program readable is to break up the calculations up into intermediate values that are held in variables with meaningful names.
 #### G20: Function Names Should Say What They Do
+This is pretty self-explanatory. If you have to look at the implementation (or documentation) of the function to know what it does, then you should work to find a better name, or rearrange the functionality so that it can be placed in functions with better names.
 #### G21: Understand the Algorithm
-#### G22: Make Logical Dependencies Physical
-#### G23: Prefer Polymorphism to If/Else or Switch/Case
-#### G24: Follow Standard Conventions
-#### G25: Replace Magic Numbers with Named Constants
-#### G26: Be Precise
-#### G27: Structure over Convention
-#### G28: Encapsulate Conditionals
-#### G29: Avoid Negative Conditionals
-#### G30: Functions Should Do One Thing
-#### G31: Hidden Temporal Coupling
-#### G32: Don't Be Arbitrary
-#### G33: Encapsulate Boundary Conditions
-#### G34: Functions Should Descend Only 1 Level of Abstraction
-#### G35: Keep Confugrable Data at High Levels
-#### G36: Avoid Transitive Navigation
+"Lots of very funny code is written because people don't take the time to understand the algorithm. They get something to work by plugging in enough `if` statements and flags, without really stopping to consider what is really going on.
 
+Before you consider yourself to be done with a function, make sure you *understand* how it works. It isn't good enough that it passes all the tests. You must *know* that the solution is correct."
+#### G22: Make Logical Dependencies Physical
+If modules depend upon another module, that dependency shouldn't just be a logical one, with an assumption. Rather, it should explicily ask that moduel for all the information it depends upon.
+#### G23: Prefer Polymorphism to If/Else or Switch/Case
+Always consider polymorphism, before using a `switch` statement. A useful heuristic is that *there may be no more than one switch statement for a given type of selection*.
+#### G24: Follow Standard Conventions
+Every team should follow a coding standard, specifying things like where to declare instance variables, braces, etc. Everyone on the team should follow these conventions.
+#### G25: Replace Magic Numbers with Named Constants
+In general, it is a bad idea to have raw numbers in your code. Hide them behind well-named constants. But also don't have magic names or objects (for instance, using a certain character which comes built into your teams test databases)
+#### G26: Be Precise
+When you make a decision in your code, make sure you make it precisely. Don't be lazy about the precision of your decisions. If a function may return `null`, check for that. If you query the database for one result, always check to make sure there aren't others. Ambiguities and imprecisions in code are either a result of disagreements or laziness. In either case, they should be eliminated.
+#### G27: Structure over Convention
+Enforce design decisions with structure, over convention. If you design your system so that for someone to extend it, they'll need to use polymorphism, that is a good way of enforcing that people who come will use that design decision.
+#### G28: Encapsulate Conditionals
+Extract boolean functions that explain the intent of the conditional statement that you are using. For example, use `if (shouldBeDeleted(timer))`, instead of `if (timer.hasExpired() && !timer.isRecurrent())`.
+#### G29: Avoid Negative Conditionals
+Negatives are harder to parse than positives, so when possible, express conditionals as positives.
+#### G30: Functions Should Do One Thing
+This is a critical rule. Functions should do one thing, and only one thing.
+#### G31: Hidden Temporal Coupling
+Don't hide temporal couplings (functions that need to be called in a certain order). Structure the arguments of your functions, so that the order in which they should be called is obvious. One way you can use is by producing a result that the next function needs.
+#### G32: Don't Be Arbitrary
+Have a reason for the way you structure your code, and communicate that reason by the structure. If a structure appears consistently throughout the system, others will use it and preserve the convention.
+#### G33: Encapsulate Boundary Conditions
+Boundary conditions are hard to keep track, so put the processing for them in one place, by encapsulating it within a variable. For instance, prefer defining
+```
+int nextLevel = level + 1
+```
+over saying `level+1` in a number of places throughout a function.
+#### G34: Functions Should Descend Only 1 Level of Abstraction
+The statements within a function should all be written at the same level of abstraction, which should be one level below the operation described by the name of the function. This is similar to [G6](#g6-code-at-wrong-level-of-abstraction).
+#### G35: Keep Confugrable Data at High Levels
+Keep configuration constants at a high level, making them easy to change, and pass those down to the rest of the application. That will make your program much easier to adjust as necessary.
+#### G36: Avoid Transitive Navigation (Law of Demeter/Shy Code)
+A module shouldn't know too much about its collaborators. Avoid doing `a.getB().getC().doSomething()`. Modules should only know about their immediate collaborators, and have them offer all the services they need, allowing them to decide exactly how to do it (saying `a.getB().doSomething()`).
 
 ### Java
 #### J1: Avoid Long Import Lists by Using Wildards
@@ -248,3 +280,17 @@ Delete any code that isn't executed, particularly in logical branches that will 
 > There is a difference between knowing how the code works, and knowing whether the algorithm will do the job required of it. Being unsure that an algorithm is appropriate is often a fact of life. Being unsure what your code does is just laziness. (Chapter 17, p. 298)
 
 > Turning off failing tests and telling yourself you'll get them to pass later is as bad as pretending your credit cards are free money. (Chapter 17, p. 289)
+
+> In general, you should prefer non-static methods to static methods. If you really want a function to be static, make sure that there is no chance that you'll want it to behave polymorphically. (p. 296)
+
+> If you have to look at the implementation (or documentation) of the function to know what it does, then you should work to find a better name, or rearrange the functionality so that it can be placed in functions with better names. (p. 297)
+
+> Lots of very funny code is written because people don't take the time to understand the algorithm. They get something to work by plugging in enough `if` statements and flags, without really stopping to consider what is really going on... Before you consider yourself to be done with a function, make sure you *understand* how it works. It isn't good enough that it passes all the tests. You must *know* that the solution is correct. (p. 298)
+
+> This means tht each team member must be mature enough to realize that it doesn't matter a whit where you put your braces, so long as you agree on where to put them. (p. 300)
+
+> Expecting the first match to be the *only* match to a query is probably naive. Using floating point numbers to represent currency is almost criminal. Avoiding locks and/or transaction management because you don't think concurrent update is likely is lazy at best. Declaring a varaible to be an `ArrayList` when a `list` will due is overly constrating. Making all variables `protected` by default is not constraining enough. (p. 301)
+
+> Ambiguities and imprecisions in code are either a result of disagreements or laziness. In either case, they should be eliminated. (p. 301)
+
+> Boolean logic is hard enough to understand without having to see it in the context of an `if` or `while` statement (p. 301)
