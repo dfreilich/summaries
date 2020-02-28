@@ -77,7 +77,7 @@ Table of Contents:
     - [G35: Keep Confugrable Data at High Levels](#g35-keep-confugrable-data-at-high-levels)
     - [G36: Avoid Transitive Navigation (Law of Demeter/Shy Code)](#g36-avoid-transitive-navigation-law-of-demetershy-code)
   - [Java](#java)
-    - [J1: Avoid Long Import Lists by Using Wildards](#j1-avoid-long-import-lists-by-using-wildards)
+    - [J1: Avoid Long Import Lists by Using Wildcards](#j1-avoid-long-import-lists-by-using-wildcards)
     - [J2: Don't Inherit Constants](#j2-dont-inherit-constants)
     - [J3: Constants vs Enums](#j3-constants-vs-enums)
   - [Names](#names)
@@ -252,7 +252,7 @@ Keep configuration constants at a high level, making them easy to change, and pa
 A module shouldn't know too much about its collaborators. Avoid doing `a.getB().getC().doSomething()`. Modules should only know about their immediate collaborators, and have them offer all the services they need, allowing them to decide exactly how to do it (saying `a.getB().doSomething()`).
 
 ### Java
-#### J1: Avoid Long Import Lists by Using Wildards
+#### J1: Avoid Long Import Lists by Using Wildcards
 #### J2: Don't Inherit Constants
 #### J3: Constants vs Enums
 
