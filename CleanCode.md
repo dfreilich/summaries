@@ -94,7 +94,7 @@ Table of Contents:
     - [T3: Don't Skip Trivial Tests](#t3-dont-skip-trivial-tests)
     - [T4: An Ignored Test is a Question about an Ambiguity](#t4-an-ignored-test-is-a-question-about-an-ambiguity)
     - [T5: Test Boundary Conditions](#t5-test-boundary-conditions)
-    - [T6: Exhausitvely Test Near Bugs](#t6-exhausitvely-test-near-bugs)
+    - [T6: Exhaustively Test Near Bugs](#t6-exhaustively-test-near-bugs)
     - [T7: Patterns of Failure are Revealing](#t7-patterns-of-failure-are-revealing)
     - [T8: Test Coverage Patterns can be Revealing](#t8-test-coverage-patterns-can-be-revealing)
     - [T9: Tests Should Be Fast](#t9-tests-should-be-fast)
@@ -271,7 +271,7 @@ A module shouldn't know too much about its collaborators. Avoid doing `a.getB().
 #### T3: Don't Skip Trivial Tests
 #### T4: An Ignored Test is a Question about an Ambiguity
 #### T5: Test Boundary Conditions
-#### T6: Exhausitvely Test Near Bugs
+#### T6: Exhaustively Test Near Bugs
 #### T7: Patterns of Failure are Revealing
 #### T8: Test Coverage Patterns can be Revealing
 #### T9: Tests Should Be Fast
