@@ -74,7 +74,7 @@ Table of Contents:
     - [G32: Don't Be Arbitrary](#g32-dont-be-arbitrary)
     - [G33: Encapsulate Boundary Conditions](#g33-encapsulate-boundary-conditions)
     - [G34: Functions Should Descend Only 1 Level of Abstraction](#g34-functions-should-descend-only-1-level-of-abstraction)
-    - [G35: Keep Confugrable Data at High Levels](#g35-keep-confugrable-data-at-high-levels)
+    - [G35: Keep Configurable Data at High Levels](#g35-keep-configurable-data-at-high-levels)
     - [G36: Avoid Transitive Navigation (Law of Demeter/Shy Code)](#g36-avoid-transitive-navigation-law-of-demetershy-code)
   - [Java](#java)
     - [J1: Avoid Long Import Lists by Using Wildcards](#j1-avoid-long-import-lists-by-using-wildcards)
@@ -246,24 +246,35 @@ int nextLevel = level + 1
 over saying `level+1` in a number of places throughout a function.
 #### G34: Functions Should Descend Only 1 Level of Abstraction
 The statements within a function should all be written at the same level of abstraction, which should be one level below the operation described by the name of the function. This is similar to [G6](#g6-code-at-wrong-level-of-abstraction).
-#### G35: Keep Confugrable Data at High Levels
+#### G35: Keep Configurable Data at High Levels
 Keep configuration constants at a high level, making them easy to change, and pass those down to the rest of the application. That will make your program much easier to adjust as necessary.
 #### G36: Avoid Transitive Navigation (Law of Demeter/Shy Code)
 A module shouldn't know too much about its collaborators. Avoid doing `a.getB().getC().doSomething()`. Modules should only know about their immediate collaborators, and have them offer all the services they need, allowing them to decide exactly how to do it (saying `a.getB().doSomething()`).
 
 ### Java
 #### J1: Avoid Long Import Lists by Using Wildcards
+If you use two or more classes from a package, import the whole package with a wildcard. There are times when the list of specific imports can be useful; but that is rare. If you are adding dependencies in by hand, tend to use wildcards.
 #### J2: Don't Inherit Constants
+There is a pattern where people put constants in an interface, and gain access to those constants by inheritang that interface. That is a very hard thing to track down, and should be avoided.
 #### J3: Constants vs Enums
+Prefer to use `enums` over constants. Attach methods and fields to them, allowing them great flexibility.
 
 ### Names
 #### N1: Choose Descriptive Names
+Don't be too quick to choose a name. Make sure the name is descriptive. Remember that meanings tend to drift as software evolves, so frequently reevaluate the appropriateness of the names you choose.
+> The power of carefully chose names is that they overload the structure of the code wth description. That overloading sets the readers' expectations about what the other functions in the module do.
 #### N2: Choose Names at the Appropriate Level of Abstraction
+Don't pick names that communicate implementations; choose names that reflect the level of abstraction of the class or function you are working in.
 #### N3: Use Standard Nomenclature Where Possible
+Names are easier to understand if they are based on existing convention or usage. If you are using a particular pattern, include that in the name (e.g., if using the `Decorator` pattern, call the class `AutoHangupModemDecorator`)
 #### N4: Unambiguous Names
+Choose names that make the workings of a function or variable unambiguous, similar to [G20](#-G20:-Function-Names-Should-Say-What-They-Do).
 #### N5: Use Long Names for Long Scopes
+If the scope of a variable is 5 lines, use short names (e.g., `i` or `j` in a loop). However, the longer the scope of the name, the longer and more precise the name should be.
 #### N6: Avoid Encodings
+Names shouldn't be encoded with type or scope information, by prefacing `m_` or `f_`.
 #### N7: Names Should Describe Side Effects
+Names should describe everything that a function, variable, or class is and does. Don't hide side effects with a name, be explicit about what it does.
 
 ### Tests
 #### T1: Insufficient Tests
@@ -294,3 +305,7 @@ A module shouldn't know too much about its collaborators. Avoid doing `a.getB().
 > Ambiguities and imprecisions in code are either a result of disagreements or laziness. In either case, they should be eliminated. (p. 301)
 
 > Boolean logic is hard enough to understand without having to see it in the context of an `if` or `while` statement (p. 301)
+
+> Names in softare are 90% of what makes software readable. You need to take the time to choose them wisely, and keep them relevant. Names are too important to treat carelessly. (p. 309)
+
+> The power of carefully chose names is that they overload the structure of the code wth description. That overloading sets the readers' expectations about what the other functions in the module do. (p. 310)
