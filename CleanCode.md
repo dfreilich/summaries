@@ -278,14 +278,23 @@ Names should describe everything that a function, variable, or class is and does
 
 ### Tests
 #### T1: Insufficient Tests
+A test suite should test everything that could possibly break. Teh tests are insufficient so long as there are conditions that have not been explored by the tests, or calculations that have not been validated.
 #### T2: Use a Coverage Tool
+Coverage tools report gaps in your testing strategy, and make it easy to find `if` or `catch` statements whose bodies haven't been checked. Use them~
 #### T3: Don't Skip Trivial Tests
+Trivial tests are easy to write, and their value in documenting the code is higher than the cost to produce and run them.
 #### T4: An Ignored Test is a Question about an Ambiguity
+If you are unsure about a behavioral detail, we can express those questions as a commented out test, to verify exactly what the behavior should be.
 #### T5: Test Boundary Conditions
+Take special care to test boundary conditions. We often get the middle of an algorithm right, but misjudge the boundaries.
 #### T6: Exhaustively Test Near Bugs
+Bugs tend to congregate. When you find a bug in a function, it is wise to do an exhaustive test of that function. You'll probably find that the bug was not alone.
 #### T7: Patterns of Failure are Revealing
+You can diagnose problems, by finding patterns in the way test cases fail.
 #### T8: Test Coverage Patterns can be Revealing
+Looking at the code that is or isn't executed by passing tests gives clues to why the failing tests fail.
 #### T9: Tests Should Be Fast
+A slow test is a test that won't get run. When things get tight, it's the slow tests that will be dropped from the suite. So *do what you must* to keep your tests fast.
 
 ## Best Quotes
 > There is a difference between knowing how the code works, and knowing whether the algorithm will do the job required of it. Being unsure that an algorithm is appropriate is often a fact of life. Being unsure what your code does is just laziness. (Chapter 17, p. 298)
@@ -309,3 +318,9 @@ Names should describe everything that a function, variable, or class is and does
 > Names in softare are 90% of what makes software readable. You need to take the time to choose them wisely, and keep them relevant. Names are too important to treat carelessly. (p. 309)
 
 > The power of carefully chose names is that they overload the structure of the code wth description. That overloading sets the readers' expectations about what the other functions in the module do. (p. 310)
+
+> A test suite should test everything that could possibly break. Teh tests are insufficient so long as there are conditions that have not been explored by the tests, or calculations that have not been validated. (p. 313)
+
+> Bugs tend to congregate. When you find a bug in a function, it is wise to do an exhaustive test of that function. You'll probably find that the bug was not alone. (p. 314)
+
+> A slow test is a test that won't get run. When things get tight, it's the slow tests that will be dropped from the suite. So *do what you must* to keep your tests fast. (p. 314)
