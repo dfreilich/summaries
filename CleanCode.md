@@ -99,6 +99,8 @@ Table of Contents:
     - [T8: Test Coverage Patterns can be Revealing](#t8-test-coverage-patterns-can-be-revealing)
     - [T9: Tests Should Be Fast](#t9-tests-should-be-fast)
 - [Best Quotes](#best-quotes)
+  - [Chapter 1: Clean Code](#chapter-1-clean-code-1)
+  - [Chapter 17: Smells and Heuristics](#chapter-17-smells-and-heuristics-1)
 
 <!-- tocstop -->
 
@@ -113,6 +115,7 @@ Clean Code is an incredibly rich depiction of best practices in Agile software c
 If you have limited time, and want to get the most value, I would delve deeply into [Chapter 17: Smells and Heuristics](#Chapter-17:-Smells-and-Heuristics), to get a detailed list of all of their compiled best practices in creating so called __*clean code*__.
 
 ## Chapter 1: Clean Code
+
 ## Chapter 2: Meaningful Names
 ## Chapter 3: Functions
 ## Chapter 4: Comments
@@ -128,6 +131,7 @@ If you have limited time, and want to get the most value, I would delve deeply i
 ## Chapter 14: Successive Refinement
 ## Chapter 15: JUnit Internals
 ## Chapter 16: Refactoring SerialDate
+Here, the author refactors the SerialData package. It is a very involved refactor, and shows how he thinks through some issues. Look through it carefully, and take notes.
 ## Chapter 17: Smells and Heuristics
 Here, Robert Martin lists a few series of heuristics and code smells he uses to refactor. This is the real gem of the book, and should be revisted often.
 ### Comments:
@@ -297,6 +301,12 @@ Looking at the code that is or isn't executed by passing tests gives clues to wh
 A slow test is a test that won't get run. When things get tight, it's the slow tests that will be dropped from the suite. So *do what you must* to keep your tests fast.
 
 ## Best Quotes
+### Chapter 1: Clean Code
+> Writing clean code is a lot like painting a picture. Most of us know when a picture is painted well or badly. But being able to recognize good art from bad does not mean that we know how to piant. So too, being able to recognize clean code from dirty code does not mean that we know how to write clean code! (p. 6)
+
+> A programmer who writes clean code is an artist who can take a blank screen through a series of transformations until it is an elegantly coded system. (p. 7)
+
+### Chapter 17: Smells and Heuristics
 > There is a difference between knowing how the code works, and knowing whether the algorithm will do the job required of it. Being unsure that an algorithm is appropriate is often a fact of life. Being unsure what your code does is just laziness. (Chapter 17, p. 298)
 
 > Turning off failing tests and telling yourself you'll get them to pass later is as bad as pretending your credit cards are free money. (Chapter 17, p. 289)
