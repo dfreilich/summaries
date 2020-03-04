@@ -115,7 +115,7 @@ Clean Code is an incredibly rich depiction of best practices in Agile software c
 If you have limited time, and want to get the most value, I would delve deeply into [Chapter 17: Smells and Heuristics](#Chapter-17:-Smells-and-Heuristics), to get a detailed list of all of their compiled best practices in creating so called __*clean code*__.
 
 ## Chapter 1: Clean Code
-
+The chapter focuses on defining clean code, as it contrasts to bad code. The author asked a few other notable software engineers what their thoughts were, and they suggested:
 ## Chapter 2: Meaningful Names
 ## Chapter 3: Functions
 ## Chapter 4: Comments
