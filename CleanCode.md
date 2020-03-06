@@ -101,6 +101,7 @@ Table of Contents:
 - [Best Quotes](#best-quotes)
   - [Chapter 1: Clean Code](#chapter-1-clean-code-1)
   - [Chapter 2: Meaningful Names](#chapter-2-meaningful-names-1)
+  - [Chapter 3: Functions](#chapter-3-functions-1)
   - [Chapter 17: Smells and Heuristics](#chapter-17-smells-and-heuristics-1)
 
 <!-- tocstop -->
@@ -172,6 +173,17 @@ A few good rules with names:
 * Add Meaningful Context &rarr; Place names in context by enclosing them inside well-named classes, functions, or namespaces.
 
 ## Chapter 3: Functions
+Some good rules of functions are:
+* They should be small &rarr; Functions hardly ever be 20 lines long, and should never be 100 lines long. Ideally, every function should be 2, 3, or 3 lines long.
+* Minimize Blocks/Indenting &rarr; Blocks within `if`'s, `else`'s, `while`'s and so on should be one line long, probably a function call. Functions shouldn't be large enough to hold nested structures, and the indent level of a function should not be greater than 1 or 2.
+* Do One Thing &rarr; **Functions should do one thing. They should do it well. They should do it only**. If a function does only those steps that are one level below the stated name of the function, then the function is doing one thing.
+* Sections within Functions &rarr; They shouldn't exist. If there are separate functions, it is an obvious symptom of doing more than one thing.
+* One level of Abstraction per Function &rarr; Mixing levels of abstraction within a function is always confusing.
+* Reading Code from Top to Bottom &rarr; Every function should be followed by those at the next level of abstraction. Each function should introduce the next, or close to it, and each function should remain at a consistent level of abstraction
+* Switch Statements &rarr; Try to ensure that `switch` statements are buried in low-level classes, and only used once, by polymorphism. Instead of having a number of functions that switch based on the type of `Employee`, have an abstract class `Employee` that will define some functions, and use an Factory to build Employees, based on the type you need.
+* Use Descriptive Names &rarr; Much like with everything else, use names to describe everything you do in a function. *You know you are working on clean code when each routine turns out to be pretty much what you expected.* A long descriptive name is better than a short enigmatic name. A long descriptive name is better than a long descriptive comment. Be consistent in your names.
+* Function Arguments &rarr; The ideal number of arguments for a function is zero. Next comes one, followed closely by two. Three arguments should be avoided where possible. More than three requires very special justification – and then shouldn't be used anyway. Arguments take conceptual power, and make testing hard (in order to test every combination of appropriate values). Output arguments are harder to understand than input arguments.
+* Flag Arguments &rarr; Flag arguments are ugly. Passing a boolean into a function is a truly terribly practice. It immediately complicates the signature of the method, loudly proclaiming that this function does more than one thing.
 ## Chapter 4: Comments
 ## Chapter 5: Formatting
 ## Chapter 6: Objects and Data Structures
@@ -368,6 +380,14 @@ A slow test is a test that won't get run. When things get tight, it's the slow t
 > One difference between a smart programmer and a professional programmer is that the professional understands that *clarity is king*. Professinoals use their powers for good, and write code that others can understand. (p. 25)
 
 > The hardest thing about choosing good namaes is that it requires good descriptive skills and a shared cultural background. This is a teaching issue, rather than a technical, business, or management issue. As a result, many people in this field don't learn to do it very well. (p. 30)
+
+### Chapter 3: Functions
+> **Functions should do one thing. They should do it well. They should do it only** (p. 35)
+
+> The ideal number of arguments for a function is zero. Next comes one, followed closely by two. Three argumens should be avoided where possible. More than three requires very special justification – and then shouldn't be used anyway. (p. 40)
+
+> Flag arguments are ugly. Passing a boolean into a function is a truly terribly practice. It immediately complicates the signature of the method, loudly proclaiming that this function does more than one thing. (p. 41)
+
 
 ### Chapter 17: Smells and Heuristics
 > There is a difference between knowing how the code works, and knowing whether the algorithm will do the job required of it. Being unsure that an algorithm is appropriate is often a fact of life. Being unsure what your code does is just laziness. (Chapter 17, p. 298)
