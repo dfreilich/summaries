@@ -152,6 +152,9 @@ The chapter focuses on defining clean code, as it contrasts to bad code. The aut
 In the end, he notes the **Boy Scout Rule** – *Leave the campground cleaner than you found it.*
 
 ## Chapter 2: Meaningful Names
+A few good rules with names:
+* Use intention-revealing names &rarr; Instead of saying `int d`, with a comment explaining the use, just name the variable (something like `elapsedTimeInDays`)
+* Avoid Disinformation &rarr;
 ## Chapter 3: Functions
 ## Chapter 4: Comments
 ## Chapter 5: Formatting
