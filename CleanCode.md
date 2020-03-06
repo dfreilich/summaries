@@ -100,6 +100,7 @@ Table of Contents:
     - [T9: Tests Should Be Fast](#t9-tests-should-be-fast)
 - [Best Quotes](#best-quotes)
   - [Chapter 1: Clean Code](#chapter-1-clean-code-1)
+  - [Chapter 2: Meaningful Names](#chapter-2-meaningful-names-1)
   - [Chapter 17: Smells and Heuristics](#chapter-17-smells-and-heuristics-1)
 
 <!-- tocstop -->
@@ -152,9 +153,24 @@ The chapter focuses on defining clean code, as it contrasts to bad code. The aut
 In the end, he notes the **Boy Scout Rule** – *Leave the campground cleaner than you found it.*
 
 ## Chapter 2: Meaningful Names
+The hardest thing about choosing good namaes is that it requires good descriptive skills and a shared cultural background. This is a teaching issue, rather than a technical, business, or management issue. As a result, many people in this field don't learn to do it very well.
+
 A few good rules with names:
 * Use intention-revealing names &rarr; Instead of saying `int d`, with a comment explaining the use, just name the variable (something like `elapsedTimeInDays`)
-* Avoid Disinformation &rarr;
+* Avoid Disinformation &rarr; Don't name your variables things that could mean something specific (for instance, only use `xList` if it's a `List`), or very long similar names. Avoid using lower-case `L` or uppercase `O` as a name
+* Make Meaningful Distinctions &rarr; Name your variables distinctively different things (rather than `a1` and `a2 `, or even abstract things like `ProductInfo` vs `ProductData`). Distinguish names in such a way that the reader knows what the differences offer.
+* Use Pronounceable names &rarr; It would be a same not to take advantage of the parts of our brain that evolved to deal with spoken languages. It makes things much more complicated.
+* Use Searchable Names &rarr; Avoid single-letter names and numeric constants (magic numbers) that could be hard to find across your code. The length of a name should correspond to the size of its scope.
+* Avoid Encodings &rarr; They used to use "hungarian notation" to name variables, making the first letter a code for the type. Don't give prefixes that aren't necessary or that people will just scan to see the meaningful parts.
+* Avoid Mental Mapping &rarr; Readers shouldn't have to mentally translate your names into other names they already know.
+* Class Names &rarr; should have noun or noun phrase names, but not be verbs. Avoid words like `Manager, Processor, Data, or Info` in the name of a class
+* Method Names &rarr; Methods should have verb names. Accessors, mutators and predicates should be named for their value, and prefixed with `get, set, and is`.
+* Don't Be Cute &rarr; Choose clarity over entertainment value. Say what you mean. Mean what you say. Don't pun, and avoid using the same word for two purposes.
+* One Word bper Concept &rarr; Use one of `fetch`, `retrieve` or `get`, and only one.
+* Use Solution Domain Names &rarr; If you are writing a particular well-known algorithm, use the name. Choosing technical names for things is usually the most appropriate course, since programmers will be reading your code.
+* Use Problem Domain Names &rarr; When there is no programmer language for what you are doing, use the name from the problem domain.
+* Add Meaningful Context &rarr; Place names in context by enclosing them inside well-named classes, functions, or namespaces.
+
 ## Chapter 3: Functions
 ## Chapter 4: Comments
 ## Chapter 5: Formatting
@@ -347,6 +363,12 @@ A slow test is a test that won't get run. When things get tight, it's the slow t
 > Reduced duplication, high expressiveness, and early building of simple abstractions. That's what makes clean code for me. (p. 11)
 
 > Many of the recommendations in this book are controversial. You will probably not agree with all of them. You might violently disagree with some of them. That's fine. We can't claim final authority. On the other hand, the recommendations in this book are things that we have thought long and hard about. We have learned them through decades of experience, and repeated trial and error. So whether you agree or disagree, it would be a shame if you did not see, and respect, our point of view. (p. 13)
+
+### Chapter 2: Meaningful Names
+> One difference between a smart programmer and a professional programmer is that the professional understands that *clarity is king*. Professinoals use their powers for good, and write code that others can understand. (p. 25)
+
+> The hardest thing about choosing good namaes is that it requires good descriptive skills and a shared cultural background. This is a teaching issue, rather than a technical, business, or management issue. As a result, many people in this field don't learn to do it very well. (p. 30)
+
 ### Chapter 17: Smells and Heuristics
 > There is a difference between knowing how the code works, and knowing whether the algorithm will do the job required of it. Being unsure that an algorithm is appropriate is often a fact of life. Being unsure what your code does is just laziness. (Chapter 17, p. 298)
 
