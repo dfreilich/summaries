@@ -182,8 +182,12 @@ Some good rules of functions are:
 * Reading Code from Top to Bottom &rarr; Every function should be followed by those at the next level of abstraction. Each function should introduce the next, or close to it, and each function should remain at a consistent level of abstraction
 * Switch Statements &rarr; Try to ensure that `switch` statements are buried in low-level classes, and only used once, by polymorphism. Instead of having a number of functions that switch based on the type of `Employee`, have an abstract class `Employee` that will define some functions, and use an Factory to build Employees, based on the type you need.
 * Use Descriptive Names &rarr; Much like with everything else, use names to describe everything you do in a function. *You know you are working on clean code when each routine turns out to be pretty much what you expected.* A long descriptive name is better than a short enigmatic name. A long descriptive name is better than a long descriptive comment. Be consistent in your names.
-* Function Arguments &rarr; The ideal number of arguments for a function is zero. Next comes one, followed closely by two. Three arguments should be avoided where possible. More than three requires very special justification – and then shouldn't be used anyway. Arguments take conceptual power, and make testing hard (in order to test every combination of appropriate values). Output arguments are harder to understand than input arguments.
+* Function Arguments &rarr; The ideal number of arguments for a function is zero. Next comes one, followed closely by two. Three arguments should be avoided where possible. More than three requires very special justification – and then shouldn't be used anyway. Arguments take conceptual power, and make testing hard (in order to test every combination of appropriate values). If there are more than 2 or 3 arguments, some of them should probably be wrapped into a class of their own. Output arguments are harder to understand than input arguments.
+  * One way of clarifying would be encoding it in the method name. `assertEquals` could then be `assertExpectedEqualsActual(expected, actual)`, which mitigates the problem of remembering the arguments.
 * Flag Arguments &rarr; Flag arguments are ugly. Passing a boolean into a function is a truly terribly practice. It immediately complicates the signature of the method, loudly proclaiming that this function does more than one thing.
+* Have No Side Effects &rarr; If your function does other hidden things, changing things that are devious, it is lying, and creates a temporal coupling. Make it say what it does, and if it does too many things, split it up.
+
+
 ## Chapter 4: Comments
 ## Chapter 5: Formatting
 ## Chapter 6: Objects and Data Structures
