@@ -187,7 +187,6 @@ Some good rules of functions are:
 * Flag Arguments &rarr; Flag arguments are ugly. Passing a boolean into a function is a truly terribly practice. It immediately complicates the signature of the method, loudly proclaiming that this function does more than one thing.
 * Have No Side Effects &rarr; If your function does other hidden things, changing things that are devious, it is lying, and creates a temporal coupling. Make it say what it does, and if it does too many things, split it up.
 
-
 ## Chapter 4: Comments
 ## Chapter 5: Formatting
 ## Chapter 6: Objects and Data Structures
