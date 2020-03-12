@@ -186,6 +186,8 @@ Some good rules of functions are:
   * One way of clarifying would be encoding it in the method name. `assertEquals` could then be `assertExpectedEqualsActual(expected, actual)`, which mitigates the problem of remembering the arguments.
 * Flag Arguments &rarr; Flag arguments are ugly. Passing a boolean into a function is a truly terribly practice. It immediately complicates the signature of the method, loudly proclaiming that this function does more than one thing.
 * Have No Side Effects &rarr; If your function does other hidden things, changing things that are devious, it is lying, and creates a temporal coupling. Make it say what it does, and if it does too many things, split it up.
+* Command Query Separation &rarr; Functions should either do something or answer something ,but not both. Either your function should change the state of an object, or it should return some information about that object.
+
 
 ## Chapter 4: Comments
 ## Chapter 5: Formatting
@@ -391,6 +393,7 @@ A slow test is a test that won't get run. When things get tight, it's the slow t
 
 > Flag arguments are ugly. Passing a boolean into a function is a truly terribly practice. It immediately complicates the signature of the method, loudly proclaiming that this function does more than one thing. (p. 41)
 
+> Functions should either do something or answer something ,but not both. Either your function should change the state of an object, or it should return some information about that object. (p. 45)
 
 ### Chapter 17: Smells and Heuristics
 > There is a difference between knowing how the code works, and knowing whether the algorithm will do the job required of it. Being unsure that an algorithm is appropriate is often a fact of life. Being unsure what your code does is just laziness. (Chapter 17, p. 298)
