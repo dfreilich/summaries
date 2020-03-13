@@ -102,6 +102,7 @@ Table of Contents:
   - [Chapter 1: Clean Code](#chapter-1-clean-code-1)
   - [Chapter 2: Meaningful Names](#chapter-2-meaningful-names-1)
   - [Chapter 3: Functions](#chapter-3-functions-1)
+  - [Chapter 4: Comments](#chapter-4-comments-1)
   - [Chapter 17: Smells and Heuristics](#chapter-17-smells-and-heuristics-1)
 
 <!-- tocstop -->
@@ -195,6 +196,20 @@ Some good rules of functions are:
 > How do I write good functions? When I first write functions, they come out long and complicated, with a suite of unit tests that cover every line of code. I massage and refine that code, splitting out functions, changing names, eliminating duplication. I shrink the methods and reorder them. Sometimes I break out whole classes, all the while keeping the tests passing.
 
 ## Chapter 4: Comments
+Comments are a necessary evil, compensating for our failure to express ourselves in code. Comments lie, because programmers can't realistically maintain them. Code changes and evolves, and all too often, comments don't change with them.
+
+Some guidelines:
+* Comments don't make up for bad code
+* Explain Yourself in code &rarr; Instead of explaining what a boolean check does, wrap it in a function that explains it, and use that instead.
+* TODO comments are sometimes reasonable. But scan through them regularly, and eliminate the ones you can.
+* Amplification &rarr; Comments can sometimes amplify an otherwise innocuous command (for example, explaining why `trim()`ing a String is critical)
+* Javadoc/Godocs in APIs &rarr; These are important to have, but must be kept carefully. Requiring every function to have a doc tends to cause wasteful clutter, however.
+* Delete commented out code
+* Avoid HTML comments.
+* TMI &rarr; Don't put interesting historical discussions into your comments.
+
+All too often, comments can be wrong, copy-paste errors, or just mess up with the code. Restrict what you can.
+
 ## Chapter 5: Formatting
 ## Chapter 6: Objects and Data Structures
 ## Chapter 7: Error Handling
@@ -402,6 +417,10 @@ A slow test is a test that won't get run. When things get tight, it's the slow t
 
 > Duplication may be the root of all evil in software. (p. 48)
 
+### Chapter 4: Comments
+> Nothing can be quite so helpful as a well-placed comment. Nothing can clutter up a module more than frivolous dogmatic comments. Nothing can be quite so damaging as an old crufty comment that propagates lies and misinformation. (p. 53)
+
+> Comments are, at best, a necessary evil. If our programming languages were expressive enough, or if we had the talent to subtly wield those languages to express our intent, we would not need comments very much - perhaps not at all. (p. 54)
 ### Chapter 17: Smells and Heuristics
 > There is a difference between knowing how the code works, and knowing whether the algorithm will do the job required of it. Being unsure that an algorithm is appropriate is often a fact of life. Being unsure what your code does is just laziness. (Chapter 17, p. 298)
 
