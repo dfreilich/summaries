@@ -187,7 +187,7 @@ Some good rules of functions are:
 * Flag Arguments &rarr; Flag arguments are ugly. Passing a boolean into a function is a truly terribly practice. It immediately complicates the signature of the method, loudly proclaiming that this function does more than one thing.
 * Have No Side Effects &rarr; If your function does other hidden things, changing things that are devious, it is lying, and creates a temporal coupling. Make it say what it does, and if it does too many things, split it up.
 * Command Query Separation &rarr; Functions should either do something or answer something ,but not both. Either your function should change the state of an object, or it should return some information about that object.
-
+* Prefer Exceptions to Error Codes &rarr; If you return an exception, that allows the consumer of a function to deal with that separately from the happy path code (if in a `catch` block), while error codes necessitate nesting and individual checks.
 
 ## Chapter 4: Comments
 ## Chapter 5: Formatting
