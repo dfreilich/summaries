@@ -188,6 +188,11 @@ Some good rules of functions are:
 * Have No Side Effects &rarr; If your function does other hidden things, changing things that are devious, it is lying, and creates a temporal coupling. Make it say what it does, and if it does too many things, split it up.
 * Command Query Separation &rarr; Functions should either do something or answer something ,but not both. Either your function should change the state of an object, or it should return some information about that object.
 * Prefer Exceptions to Error Codes &rarr; If you return an exception, that allows the consumer of a function to deal with that separately from the happy path code (if in a `catch` block), while error codes necessitate nesting and individual checks.
+* Extract Try/Catch Blocks &rarr; `Try`/`catch` blocks are ugly, confuse the structure of the code, and importantly, mix error processing with normal processing. Extract the bodies of the blocks into their own function, so that you don't have to mix up abstraction levels.
+* Error Handling is 1 Thing &rarr; This references the "Do One Thing" rule above: Remember that error handling is one thing, and therefore, a function that handles errors should do nothing else.
+* Don't Repeat Yourself (DRY) &rarr; Duplication may be the root of all evil in software. Don't do it.
+
+> How do I write good functions? When I first write functions, they come out long and complicated, with a suite of unit tests that cover every line of code. I massage and refine that code, splitting out functions, changing names, eliminating duplication. I shrink the methods and reorder them. Sometimes I break out whole classes, all the while keeping the tests passing.
 
 ## Chapter 4: Comments
 ## Chapter 5: Formatting
@@ -394,6 +399,8 @@ A slow test is a test that won't get run. When things get tight, it's the slow t
 > Flag arguments are ugly. Passing a boolean into a function is a truly terribly practice. It immediately complicates the signature of the method, loudly proclaiming that this function does more than one thing. (p. 41)
 
 > Functions should either do something or answer something ,but not both. Either your function should change the state of an object, or it should return some information about that object. (p. 45)
+
+> Duplication may be the root of all evil in software. (p. 48)
 
 ### Chapter 17: Smells and Heuristics
 > There is a difference between knowing how the code works, and knowing whether the algorithm will do the job required of it. Being unsure that an algorithm is appropriate is often a fact of life. Being unsure what your code does is just laziness. (Chapter 17, p. 298)
