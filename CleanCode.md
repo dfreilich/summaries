@@ -103,6 +103,7 @@ Table of Contents:
   - [Chapter 2: Meaningful Names](#chapter-2-meaningful-names-1)
   - [Chapter 3: Functions](#chapter-3-functions-1)
   - [Chapter 4: Comments](#chapter-4-comments-1)
+  - [Chapter 5: Formatting](#chapter-5-formatting-1)
   - [Chapter 17: Smells and Heuristics](#chapter-17-smells-and-heuristics-1)
 
 <!-- tocstop -->
@@ -211,6 +212,16 @@ Some guidelines:
 All too often, comments can be wrong, copy-paste errors, or just mess up with the code. Restrict what you can.
 
 ## Chapter 5: Formatting
+Code formatting is important; it is about communicating the message that you are serious. Look at the size of files, and try to make sure you are in the average, if that much. It is possible to build significant systems (such as `FitNesse`) in files that are typically 200 lines long. Try and keep your lines short. Indentation makes code easier to see, and prefer keeping functions expanded to collapsing them.
+
+Think of every file as a newspaper article. The name should explain what it's about, and sufficient to tell people whether they are in the right module or not.
+
+Be conscious of vertical density and openness: Have a blank line separating every function, imports, etc. At the same time, try and make sure that relevant properties are connected, and not separated by extraneous comments.
+
+Limit **vertical distance** &rarr; Make sure concepts closely related are kept vertically close to each other. Declare variables as close to their usage as possible. Keep dependent functions close (one function that calls another function). Keep code that has conceptual affinity, like similar functions, close.
+
+Every team should agree upon a single formatting style, and then use that. A good software system is composed of a set of documents that read nicely, with a consistent and smooth style.
+
 ## Chapter 6: Objects and Data Structures
 ## Chapter 7: Error Handling
 ## Chapter 8: Boundaries
@@ -421,6 +432,10 @@ A slow test is a test that won't get run. When things get tight, it's the slow t
 > Nothing can be quite so helpful as a well-placed comment. Nothing can clutter up a module more than frivolous dogmatic comments. Nothing can be quite so damaging as an old crufty comment that propagates lies and misinformation. (p. 53)
 
 > Comments are, at best, a necessary evil. If our programming languages were expressive enough, or if we had the talent to subtly wield those languages to express our intent, we would not need comments very much - perhaps not at all. (p. 54)
+
+### Chapter 5: Formatting
+> When people look under the hood, we want them to be impressed with the neatness, consistency, and attention to detail that they perceive. We want them to be struck by the orderliness. We want their eyebrows to rise as they scroll through the modules. We want them to perceive that professionals have been at work. If, instead, they see a scrambled mass of code that looks like it was written by a bevy of drunken sailors, then they are likely to conclude that the same inattention to detail pervades every other aspect of the project. (p. 75)
+
 ### Chapter 17: Smells and Heuristics
 > There is a difference between knowing how the code works, and knowing whether the algorithm will do the job required of it. Being unsure that an algorithm is appropriate is often a fact of life. Being unsure what your code does is just laziness. (Chapter 17, p. 298)
 
