@@ -19,7 +19,7 @@ Table of Contents:
 - [Chapter 9: Unit Tests](#chapter-9-unit-tests)
 - [Chapter 10: Classes](#chapter-10-classes)
 - [Chapter 11: Systems](#chapter-11-systems)
-- [Chapter 12: Emergenece](#chapter-12-emergenece)
+- [Chapter 12: Emergence](#chapter-12-emergence)
 - [Chapter 13: Concurrency](#chapter-13-concurrency)
 - [Chapter 14: Successive Refinement](#chapter-14-successive-refinement)
 - [Chapter 15: JUnit Internals](#chapter-15-junit-internals)
@@ -228,7 +228,7 @@ Every team should agree upon a single formatting style, and then use that. A goo
 ## Chapter 9: Unit Tests
 ## Chapter 10: Classes
 ## Chapter 11: Systems
-## Chapter 12: Emergenece
+## Chapter 12: Emergence
 ## Chapter 13: Concurrency
 ## Chapter 14: Successive Refinement
 ## Chapter 15: JUnit Internals
