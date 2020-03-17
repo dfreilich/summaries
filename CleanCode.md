@@ -223,6 +223,7 @@ Limit **vertical distance** &rarr; Make sure concepts closely related are kept v
 Every team should agree upon a single formatting style, and then use that. A good software system is composed of a set of documents that read nicely, with a consistent and smooth style.
 
 ## Chapter 6: Objects and Data Structures
+
 ## Chapter 7: Error Handling
 ## Chapter 8: Boundaries
 ## Chapter 9: Unit Tests
