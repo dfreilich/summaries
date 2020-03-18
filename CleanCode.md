@@ -248,13 +248,25 @@ Some rules are:
 Clean code is readable, but must also be robust.
 
 ## Chapter 8: Boundaries
+We often need to integrate other software into our system, whether it be other teams in our company, or third party providers. Some good practices of keeping boundaries of software clean are:
+* Don't pass collections around &rarr; Many collections (like `java.util.Map` provide more functionality than they should (like `clear()`, for instance)). Instead of using the base class, it is better to encapsulate it within another class where it is used (like define a `Sensor` class)
+* Use `Learning Tests` &rarr; When learning third-party libraries, you can do it by developing small unit tests to show the boundaries, what you can expect and what you can't, with a verifiable library of tests to let you know of major changes to your expectations.
+*
+
 ## Chapter 9: Unit Tests
+
 ## Chapter 10: Classes
+
 ## Chapter 11: Systems
+
 ## Chapter 12: Emergence
+
 ## Chapter 13: Concurrency
+
 ## Chapter 14: Successive Refinement
+
 ## Chapter 15: JUnit Internals
+
 ## Chapter 16: Refactoring SerialDate
 Here, the author refactors the SerialData package. It is a very involved refactor, and shows how he thinks through some issues. Look through it carefully, and take notes.
 ## Chapter 17: Smells and Heuristics
