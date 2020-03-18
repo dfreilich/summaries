@@ -104,6 +104,7 @@ Table of Contents:
   - [Chapter 3: Functions](#chapter-3-functions-1)
   - [Chapter 4: Comments](#chapter-4-comments-1)
   - [Chapter 5: Formatting](#chapter-5-formatting-1)
+  - [Chapter 7: Error Handling](#chapter-7-error-handling-1)
   - [Chapter 17: Smells and Heuristics](#chapter-17-smells-and-heuristics-1)
 
 <!-- tocstop -->
@@ -232,7 +233,20 @@ The **Law of Demeter** says that a module shouldn't know about the innards of th
 There are sometimes hybrids, that are half object and half data structure. They have functions that do significant things, and they also have public variables that tempt other external functions to manipulate innards. These hybrids make it hard to add new functions, as well as new data structures. Avoid them.
 
 Sometimes, when we are trying to access too much of an object, we need to step back and figure out what we really want to do.
+
 ## Chapter 7: Error Handling
+Many code bases are completely dominated by error handling (cough **Go** cough cough), to the level that it is nearly impossible to see what the code does because of all of the scattered error handling. Error handling is important, but if it obscures logic, it's wrong.
+
+Some rules are:
+* Use exceptions rather than Return Codes &rarr; Throwing an exception is cleaner, and allows you to handle it better in `try`/`catch` blocks.
+* Write your `Try-Catch-Finally` Statement First &rarr; When dealing with code that can throw an exception, start with a `try-catch-finally` statement, to let you define what the exception would be, and then use TDD to build up the rest of the logic.
+* Use Unchecked Exceptions &rarr; If you use Checked Exceptions, you need to declare that exception in the method signature of every method until the catch, which makes it very likely to change code. In general, the dependency costs outweigh the benefits
+* Provide Context with Exceptions &rarr; When erroring out, clarify why
+* Define Exception Classes in terms of a Caller's Needs &rarr; Focus on how the caller will handle it, and instead of making very differentiated error classes, provide a common super class so that it can be easily handled
+* Don't Return/Pass Null &rarr; If you are tempted to return null from a method, consider throwing an exception, or returning a Special Case object. And especially don't pass `null` into methods whenever possible.
+
+Clean code is readable, but must also be robust.
+
 ## Chapter 8: Boundaries
 ## Chapter 9: Unit Tests
 ## Chapter 10: Classes
@@ -444,6 +458,9 @@ A slow test is a test that won't get run. When things get tight, it's the slow t
 
 ### Chapter 5: Formatting
 > When people look under the hood, we want them to be impressed with the neatness, consistency, and attention to detail that they perceive. We want them to be struck by the orderliness. We want their eyebrows to rise as they scroll through the modules. We want them to perceive that professionals have been at work. If, instead, they see a scrambled mass of code that looks like it was written by a bevy of drunken sailors, then they are likely to conclude that the same inattention to detail pervades every other aspect of the project. (p. 75)
+
+### Chapter 7: Error Handling
+> Error handling is important, but if it obscures logic, it's wrong. (p. 103)
 
 ### Chapter 17: Smells and Heuristics
 > There is a difference between knowing how the code works, and knowing whether the algorithm will do the job required of it. Being unsure that an algorithm is appropriate is often a fact of life. Being unsure what your code does is just laziness. (Chapter 17, p. 298)
