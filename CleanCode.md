@@ -223,7 +223,15 @@ Limit **vertical distance** &rarr; Make sure concepts closely related are kept v
 Every team should agree upon a single formatting style, and then use that. A good software system is composed of a set of documents that read nicely, with a consistent and smooth style.
 
 ## Chapter 6: Objects and Data Structures
+Objects enable you to hide implementation, by giving the proper form of abstraction. Objects hide their data behind abstractions, and expose functions that operate on that data. Data structures expose their data, and have no meaningful functions.
 
+Procedural code makes it easy to add new functions without changing the existing data structures. Object Oriented code, on theother hand, makes it easy to add new classes without changing existing functions.
+
+The **Law of Demeter** says that a module shouldn't know about the innards of the objets it manipulates. In other words, talk to friends, not to strangers. If you have chain methods on objects (something like `ctx.getOptions().getScratchDir().getAbsolutePath()`)
+
+There are sometimes hybrids, that are half object and half data structure. They have functions that do significant things, and they also have public variables that tempt other external functions to manipulate innards. These hybrids make it hard to add new functions, as well as new data structures. Avoid them.
+
+Sometimes, when we are trying to access too much of an object, we need to step back and figure out what we really want to do.
 ## Chapter 7: Error Handling
 ## Chapter 8: Boundaries
 ## Chapter 9: Unit Tests
