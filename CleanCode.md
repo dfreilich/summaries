@@ -105,6 +105,7 @@ Table of Contents:
   - [Chapter 4: Comments](#chapter-4-comments-1)
   - [Chapter 5: Formatting](#chapter-5-formatting-1)
   - [Chapter 7: Error Handling](#chapter-7-error-handling-1)
+  - [Chapter 8: Boundaries](#chapter-8-boundaries-1)
   - [Chapter 17: Smells and Heuristics](#chapter-17-smells-and-heuristics-1)
 
 <!-- tocstop -->
@@ -251,7 +252,9 @@ Clean code is readable, but must also be robust.
 We often need to integrate other software into our system, whether it be other teams in our company, or third party providers. Some good practices of keeping boundaries of software clean are:
 * Don't pass collections around &rarr; Many collections (like `java.util.Map` provide more functionality than they should (like `clear()`, for instance)). Instead of using the base class, it is better to encapsulate it within another class where it is used (like define a `Sensor` class)
 * Use `Learning Tests` &rarr; When learning third-party libraries, you can do it by developing small unit tests to show the boundaries, what you can expect and what you can't, with a verifiable library of tests to let you know of major changes to your expectations.
-*
+* Make Interface For Code Not Yet Existent &rarr; If you are dealing with an API that hasn't yet been designed/finished, define your own interface, so that you can keep it under control. You can then create an Adapter afterwards to conform the actual API to what your interface is, as well as giving you a useful seam for teasms.
+
+Good software designs accommodate change without huge investments and rework. Code at the boundaries needs clear separations, and tests that define expectations. We should avoid letting too much of our code know about the third-party particulars. It is better to depend on something you control than on something you can't control, lest it end up controlling you.
 
 ## Chapter 9: Unit Tests
 
@@ -473,6 +476,12 @@ A slow test is a test that won't get run. When things get tight, it's the slow t
 
 ### Chapter 7: Error Handling
 > Error handling is important, but if it obscures logic, it's wrong. (p. 103)
+
+### Chapter 8: Boundaries
+> Good software designs accommodate change without huge investments and rework. (p. 120)
+
+>  Code at the boundaries needs clear separations, and tests that define expectations. We should avoid letting too much of our code know about the third-party particulars. It is better to depend on something you control than on something you can't control, lest it end up controlling you. (p. 120)
+
 
 ### Chapter 17: Smells and Heuristics
 > There is a difference between knowing how the code works, and knowing whether the algorithm will do the job required of it. Being unsure that an algorithm is appropriate is often a fact of life. Being unsure what your code does is just laziness. (Chapter 17, p. 298)
