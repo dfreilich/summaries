@@ -257,6 +257,21 @@ We often need to integrate other software into our system, whether it be other t
 Good software designs accommodate change without huge investments and rework. Code at the boundaries needs clear separations, and tests that define expectations. We should avoid letting too much of our code know about the third-party particulars. It is better to depend on something you control than on something you can't control, lest it end up controlling you.
 
 ## Chapter 9: Unit Tests
+TDD is more than just asking unit tests first. It consists of 3 laws:
+1. You can't write production code until you have written a failing unit test
+2. You may not write more of a unit test than is sufficient to fail, and not compiling is failing
+3. You can't write more production code than is sufficient to pass the currently failing test.
+
+Test code is just as important as production code, and should therefore be kept as clean as production code. Unit tests keep our code flexible, maintainable, and reusable, because tests enable change. A clean test is defined as one that is **readable**.
+
+Prefer one assert per test, but don't be  afraid to put more than one in a test &rarr; just try to minimize them. Test a single **concept** in each test function.
+
+Clean tests should follow *__FIRST__*:
+* **Fast** &rarr; Tests should be fast, so that you run them frequently
+* **Independent** &rarr; Tests shouldn't depend on each other; you should be able to run each test independently
+* **Repeatable** &rarr; Tests should be repeatable in any environment, so that you can feel confident in them
+* **Self-validating** &rarr; Tests should have a boolean output – either they pass, or fail.
+* **Timely** &rarr; Tests should be written *just before* the production code that makes them pass.
 
 ## Chapter 10: Classes
 
