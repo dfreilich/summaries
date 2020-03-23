@@ -106,6 +106,7 @@ Table of Contents:
   - [Chapter 5: Formatting](#chapter-5-formatting-1)
   - [Chapter 7: Error Handling](#chapter-7-error-handling-1)
   - [Chapter 8: Boundaries](#chapter-8-boundaries-1)
+  - [Chapter 10: Classes](#chapter-10-classes-1)
   - [Chapter 17: Smells and Heuristics](#chapter-17-smells-and-heuristics-1)
 
 <!-- tocstop -->
@@ -274,6 +275,17 @@ Clean tests should follow *__FIRST__*:
 * **Timely** &rarr; Tests should be written *just before* the production code that makes them pass.
 
 ## Chapter 10: Classes
+A class should begin with a list of variables. Public static constants, if any, should come first. Public functions should follow the list of variables.
+
+Look for ways to maintain privacy inside the class, and keep things private if they don't absolutely need to be public.
+
+Classes should be:
+* Small &rarr; The name of a class should describe what responsibilities it fulfills. We should be able to write a brief description of the class in about 25 words.
+* **SRP** &rarr; The **Single Responsibility Principle** states that a class should have one, and only one, *reason to change*. This can be abused when creating code, but should be closely adhered to when refactoring, to make sure that each developer knows where to find things relevant.
+  * We want our systems to be composed of many small classes, not a few large ones. Each small class encapsulates a single responsibility, has a single reason to change, and collaborates with a few others to achieve the desired system behaviors.
+* Cohesive &rarr; When cohesion is high, the methods and variables of the class are co-dependent, and hang together as a logical whole. When classes lose cohesion, then split them off ino their own classes
+* **OCP (Open-Closed Principle)** &rarr; Classes should be open for extension, but closed for modification. When you have to update anything, it should be easy to adapt and add features by extending the system, but shouldn't require modifications to existing code. For instance, making it easy to add an `UpdateSql` class which extends `Sql`, instead of keeping everything in the `Sql` class.
+* **Dependency Inversion Principle** &rarr; Use interfaces to isolate clients from APIs they would depend upon. This lack of coupling, introduced by the interface, will allow the elements of the system to be better isolated from each other, and from change. Your code should depend upon abstractions, and not on concrete details.
 
 ## Chapter 11: Systems
 
@@ -497,6 +509,8 @@ A slow test is a test that won't get run. When things get tight, it's the slow t
 
 >  Code at the boundaries needs clear separations, and tests that define expectations. We should avoid letting too much of our code know about the third-party particulars. It is better to depend on something you control than on something you can't control, lest it end up controlling you. (p. 120)
 
+### Chapter 10: Classes
+> We want our systems to be composed of many small classes, not a few large ones. Each small class encapsulates a single responsibility, has a single reason to change, and collaborates with a few others to achieve the desired system behaviors. (p. 140)
 
 ### Chapter 17: Smells and Heuristics
 > There is a difference between knowing how the code works, and knowing whether the algorithm will do the job required of it. Being unsure that an algorithm is appropriate is often a fact of life. Being unsure what your code does is just laziness. (Chapter 17, p. 298)
