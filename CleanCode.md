@@ -26,7 +26,7 @@ Table of Contents:
 - [Chapter 16: Refactoring SerialDate](#chapter-16-refactoring-serialdate)
 - [Chapter 17: Smells and Heuristics](#chapter-17-smells-and-heuristics)
   - [Comments:](#comments)
-    - [C1: Innappropriate Information](#c1-innappropriate-information)
+    - [C1: Inappropriate Information](#c1-inappropriate-information)
     - [C2: Obsolete Comment](#c2-obsolete-comment)
     - [C3: Redundant Comment](#c3-redundant-comment)
     - [C4: Poorly Written Comment](#c4-poorly-written-comment)
@@ -330,7 +330,7 @@ Here, the author refactors the SerialData package. It is a very involved refacto
 ## Chapter 17: Smells and Heuristics
 Here, Robert Martin lists a few series of heuristics and code smells he uses to refactor. This is the real gem of the book, and should be revisted often.
 ### Comments:
-#### C1: Innappropriate Information
+#### C1: Inappropriate Information
 Comments shouldn't hold information that is better held in a different system, like your source code control system. Meta-data such as authors, when it was last modified, and the such shouldn't appear in comments. __*Comments should be reserved for technical notes about the code and design.*__
 #### C2: Obsolete Comment
 Comments get old, irrelevant, and incorrect very quickly. If it become sthat, update it or get rid of it as quickly as possible. __*It is best not to write a comment that will become obsolete.*__
