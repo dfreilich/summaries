@@ -288,6 +288,21 @@ Classes should be:
 * **Dependency Inversion Principle** &rarr; Use interfaces to isolate clients from APIs they would depend upon. This lack of coupling, introduced by the interface, will allow the elements of the system to be better isolated from each other, and from change. Your code should depend upon abstractions, and not on concrete details.
 
 ## Chapter 11: Systems
+It isn't enough to just have clean code - You also need to make sure that the system level is also clean.
+
+One consideration is the separation of **construction/initialization** from the **usage**. For instance, we may use a lazy initialization to only create a service if it is called, but that code will live inside the code, which makes it more complex to tease out.
+
+One way to separate it is by moving all construction to the `main` file, and design the system assuming that all objects are constructed and wired up appropriately.
+
+We can also use the `Abstract Factory` pattern, if the code needs to create an object somewhere particular, by using an Abstract Factory that you feed in using `Dependency Injection` in the `main` file.
+
+`Inversion of Control` here means that an object shouldn't take responsibility for instantiating dependencies itself, but should pass this responsibility to another authoritative mechanism. (The Spring Framework is the best known DI container for Java, where you define which objects to wire together in an XML configuration file, and then you can ask for Java objects by name in the code.)
+
+Separating concerns through these approaches is really important. You can then truly *test drive* your architecture, allowing you to evolve it as necessary.
+
+While the most qualified persons should make the decisions, it's also best to *postpone decisions until the last possible moment*. A premature decision is a decision made with suboptimal knowledge.
+
+Systems need to be clean too. At all levels of abstraction, the intent should be clear. Whether you are designing systems or individual modules, never forget to use the simplest thing that can possibly work.
 
 ## Chapter 12: Emergence
 
