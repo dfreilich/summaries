@@ -107,6 +107,7 @@ Table of Contents:
   - [Chapter 7: Error Handling](#chapter-7-error-handling-1)
   - [Chapter 8: Boundaries](#chapter-8-boundaries-1)
   - [Chapter 10: Classes](#chapter-10-classes-1)
+  - [Chapter 12: Emergences](#chapter-12-emergences)
   - [Chapter 17: Smells and Heuristics](#chapter-17-smells-and-heuristics-1)
 
 <!-- tocstop -->
@@ -305,6 +306,18 @@ While the most qualified persons should make the decisions, it's also best to *p
 Systems need to be clean too. At all levels of abstraction, the intent should be clear. Whether you are designing systems or individual modules, never forget to use the simplest thing that can possibly work.
 
 ## Chapter 12: Emergence
+Kent Beck's 4 rules of *Simple Design* can be very helpful in creating well-designed software. A design is ***simple*** if it:
+* Runs all tests &rarr; A system that is comprehensively tested andpasses all of its tests all of the time is a testable system. Systems that aren't testable aren't verifiable. Arguably, a system that cannot be verified should never be deployed.
+* Contains no duplication &rarr; Duplication can be as simple as exact copies of the same line, or methods that do similar/equal things. As we extract commonality at the smallest level, we start to iterate and clean up the code, which can cause system complexity to shrink dramatically.
+* Expresses the intent of the programmer &rarr; The majority of the cost of a software project is in long-term maintenance. In order to minimize the potential for defects as we introduce change, it's critical for us to be able to understand what a system does. The clearer the author can make the code, the less time others will have to spend understanding it. This can be done through:
+  * Choosing good names (we want to hear a class or function  name, and not be surprised when we discover what it does)
+  * Keeping your functions and classes small
+  * Using standard nomenclature (if you are using a pattern, say so in the name)
+  * Keeping clear, well-written unit tests
+  * Trying &rarr; Just try to be expressive with your code.
+* Minimizes the number of classes and methods &rarr; You can take expressiveness and duplication too far, so try and keep the function and class counts low.
+
+> **Take a little pride in your workmanship. Spend a little time with each of your functions and classes. Choose better names, split large functions into smaller functions, and generally just take care of what you've created. Care is a precious resource.**
 
 ## Chapter 13: Concurrency
 
@@ -526,6 +539,18 @@ A slow test is a test that won't get run. When things get tight, it's the slow t
 
 ### Chapter 10: Classes
 > We want our systems to be composed of many small classes, not a few large ones. Each small class encapsulates a single responsibility, has a single reason to change, and collaborates with a few others to achieve the desired system behaviors. (p. 140)
+
+### Chapter 12: Emergences
+> A system that is comprehensively tested and passes all of its tests all of the time is a testable system. Systems that aren't testable aren't verifiable. Arguably, a system that cannot be verified should never be deployed. (p. 172)
+
+> The majority of the cost of a software project is in long-term maintenance. In order to minimize the potential for defects as we introduce change, it's critical for us to be able to understand what a system does. The clearer the author can make the code, the less time others will have to spend understanding it. (p. 175)
+
+> All too often we get our code working, and then move on to the next problem without giving sufficient thought to making that code easy for the next person to read. Remember, the most likely next person to read that code will be you. (p. 176)
+
+> Take a little pride in your workmanship. Spend a little time with each of your functions and classes. Choose better names, split large functions into smaller functions, and generally just take care of what you've created. Care is a precious resource. (p. 176)
+
+
+
 
 ### Chapter 17: Smells and Heuristics
 > There is a difference between knowing how the code works, and knowing whether the algorithm will do the job required of it. Being unsure that an algorithm is appropriate is often a fact of life. Being unsure what your code does is just laziness. (Chapter 17, p. 298)
