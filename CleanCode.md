@@ -108,6 +108,7 @@ Table of Contents:
   - [Chapter 8: Boundaries](#chapter-8-boundaries-1)
   - [Chapter 10: Classes](#chapter-10-classes-1)
   - [Chapter 12: Emergences](#chapter-12-emergences)
+  - [Chapter 13: Concurrency](#chapter-13-concurrency-1)
   - [Chapter 17: Smells and Heuristics](#chapter-17-smells-and-heuristics-1)
 
 <!-- tocstop -->
@@ -320,6 +321,22 @@ Kent Beck's 4 rules of *Simple Design* can be very helpful in creating well-desi
 > **Take a little pride in your workmanship. Spend a little time with each of your functions and classes. Choose better names, split large functions into smaller functions, and generally just take care of what you've created. Care is a precious resource.**
 
 ## Chapter 13: Concurrency
+Writing clean concurrent programs is very hard. Concurrency is a decoupling strategy, decoupling *what* gets done from *when* it gets done. This can dramatically improve the throughput and the structure of an application, as well as increase the runtime and scalability of systems. However, it's hard. Concurrency:
+* incurs some overhead
+* is complex
+* bugs usually aren't repeatable (and are therefore often ignored for some time)
+* often requires a fundamental change in design strategy.
+
+There are a series of principles and techniques for defending your systems from the problems of concurrent code:
+* **SRP (Single Responsibility Principle)** &rarr; Concurrency design is complex enough to require frequent changes, and should therefore be separated from the rest of the code. Keep it separate from other code whenever possible.
+* Limit the Scope of Data &rarr; Restrict the number of critical sections affected by `synchronized` concurrent code. Severely limit the access of any data that may be shared
+* Use Copies of Data &rarr; A good way to avoid shared data is to avoid sharing the data in the first place. Copy Copies of objects may cost more, but often the savings in avoiding the lock will make up for the additional overhead.
+* Independent Threads &rarr; Write your code so that each thread exists in its own world, sharing no data with any other thread.
+* Known your Library, and use Thread Safe collections &rarr; In Java, the `ConcurrentHashMap` performs better than `HashMap` in nearly all situations.
+* Know Your Algorithm &rarr; There are a few different problems that span most concurrent issues, and you should know some of the solutions for when you come across them:
+  * **Producer-Consumer** &rarr; Producer threads create work and put it in a buffer/queue, that consumer threads read and use. The queue is a *bound resource*, and coordination between the producers and consumers involves some method of signaling, that can end up with both waiting to be notified that they can continue if done incorrectly.
+  * **Readers-Writers** &rarr;
+  * **Dining Philosophers** &rarr;
 
 ## Chapter 14: Successive Refinement
 
@@ -549,7 +566,8 @@ A slow test is a test that won't get run. When things get tight, it's the slow t
 
 > Take a little pride in your workmanship. Spend a little time with each of your functions and classes. Choose better names, split large functions into smaller functions, and generally just take care of what you've created. Care is a precious resource. (p. 176)
 
-
+### Chapter 13: Concurrency
+> Concurrency is a decoupling strategy. It helps us decouple *what* gets done from *when* it gets done. (p. 178)
 
 
 ### Chapter 17: Smells and Heuristics
