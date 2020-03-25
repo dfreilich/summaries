@@ -329,21 +329,29 @@ Writing clean concurrent programs is very hard. Concurrency is a decoupling stra
 
 There are a series of principles and techniques for defending your systems from the problems of concurrent code:
 * **SRP (Single Responsibility Principle)** &rarr; Concurrency design is complex enough to require frequent changes, and should therefore be separated from the rest of the code. Keep it separate from other code whenever possible.
-* Limit the Scope of Data &rarr; Restrict the number of critical sections affected by `synchronized` concurrent code. Severely limit the access of any data that may be shared
+* Limit the Scope of Data &rarr; Restrict the number of critical sections affected by `synchronized` concurrent code. Severely limit the access of any data that may be shared. Keep the `synchronized` sections small, given that they generate locks, which are expensive.
 * Use Copies of Data &rarr; A good way to avoid shared data is to avoid sharing the data in the first place. Copy Copies of objects may cost more, but often the savings in avoiding the lock will make up for the additional overhead.
-* Independent Threads &rarr; Write your code so that each thread exists in its own world, sharing no data with any other thread.
+* Independent Threads &rarr; Write your code so that each thread exists in its own world, sharing no data with any other thread. Avoid using more than one method on a shared object, because there could be bugs on multiple methods, based on the language.
 * Known your Library, and use Thread Safe collections &rarr; In Java, the `ConcurrentHashMap` performs better than `HashMap` in nearly all situations.
 * Know Your Algorithm &rarr; There are a few different problems that span most concurrent issues, and you should know some of the solutions for when you come across them:
   * **Producer-Consumer** &rarr; Producer threads create work and put it in a buffer/queue, that consumer threads consume and use. The queue is a *bound resource*, and coordination between the producers and consumers involves some method of signaling, that can end up with both waiting to be notified that they can continue if done incorrectly.
   * **Readers-Writers** &rarr; There can be a shared resource (a *bound resource*) between two threads, which will be written to by a writer and read by a reader. Coordinating it so that readers don't read when it is being written, and vice versa, is a tough balancing act.
   * **Dining Philosophers** &rarr; There can be a number of threads which need the same resources, and which may come to starve other threads as they wait for resources. Systems like this can experience **deadlock** (two+ threads holding on to resources, waiting for each other to finish so that they can get the held resource), **livelock** (threads in lockstep, trying to do work but finding another one in the way), throughput and efficiency degradation.
+* Writing Correct Shut Down Code is Hard &rarr; Graceful shutdown can be hard to get correct. Think about it early, expect to spend significant amounts of time getting it correct.
+* Don't Ignore Failures &rarr; Treat spurious failures as candidates for threading issues
+* Get your non-threaded code working first
+* Make your threaded code tunable
+* Try To Make Your Code Fail &rarr; Insert things to try and make your code failure.
 
 ## Chapter 14: Successive Refinement
+This is a case study in successive refinement, to try and adjust an `Args` class. It's important to know that you don't write clean code - you first write dirty code, and then clean it.
 
 ## Chapter 15: JUnit Internals
+This is another case study in successive refinement, to work on `JUnit`.
 
 ## Chapter 16: Refactoring SerialDate
 Here, the author refactors the SerialData package. It is a very involved refactor, and shows how he thinks through some issues. Look through it carefully, and take notes.
+
 ## Chapter 17: Smells and Heuristics
 Here, Robert Martin lists a few series of heuristics and code smells he uses to refactor. This is the real gem of the book, and should be revisted often.
 ### Comments:
