@@ -334,9 +334,9 @@ There are a series of principles and techniques for defending your systems from 
 * Independent Threads &rarr; Write your code so that each thread exists in its own world, sharing no data with any other thread.
 * Known your Library, and use Thread Safe collections &rarr; In Java, the `ConcurrentHashMap` performs better than `HashMap` in nearly all situations.
 * Know Your Algorithm &rarr; There are a few different problems that span most concurrent issues, and you should know some of the solutions for when you come across them:
-  * **Producer-Consumer** &rarr; Producer threads create work and put it in a buffer/queue, that consumer threads read and use. The queue is a *bound resource*, and coordination between the producers and consumers involves some method of signaling, that can end up with both waiting to be notified that they can continue if done incorrectly.
-  * **Readers-Writers** &rarr;
-  * **Dining Philosophers** &rarr;
+  * **Producer-Consumer** &rarr; Producer threads create work and put it in a buffer/queue, that consumer threads consume and use. The queue is a *bound resource*, and coordination between the producers and consumers involves some method of signaling, that can end up with both waiting to be notified that they can continue if done incorrectly.
+  * **Readers-Writers** &rarr; There can be a shared resource (a *bound resource*) between two threads, which will be written to by a writer and read by a reader. Coordinating it so that readers don't read when it is being written, and vice versa, is a tough balancing act.
+  * **Dining Philosophers** &rarr; There can be a number of threads which need the same resources, and which may come to starve other threads as they wait for resources. Systems like this can experience **deadlock** (two+ threads holding on to resources, waiting for each other to finish so that they can get the held resource), **livelock** (threads in lockstep, trying to do work but finding another one in the way), throughput and efficiency degradation.
 
 ## Chapter 14: Successive Refinement
 
