@@ -347,7 +347,7 @@ There are a series of principles and techniques for defending your systems from 
 This is a case study in successive refinement, to try and adjust an `Args` class. It's important to know that you don't write clean code - you first write dirty code, and then clean it.
 
 ## Chapter 15: JUnit Internals
-This is another case study in successive refinement, to work on `JUnit`.
+This is another case study in successive refinement, to work on `JUnit`.œ
 
 ## Chapter 16: Refactoring SerialDate
 Here, the author refactors the SerialData package. It is a very involved refactor, and shows how he thinks through some issues. Look through it carefully, and take notes.
