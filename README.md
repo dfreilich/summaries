@@ -19,16 +19,16 @@ Table of Contents:
 <!-- tocstop -->
 
 ## Completed:
-
-## WIP:
 * [Clean Code](https://amzn.to/37kjAOd) (Robert Martin) - [Summary](CleanCode.md)
 
-## Next Up:
+## WIP:
 * [Clean Coder](https://amzn.to/38o5blj) (Robert Martin)
+
+## Next Up:
+* [Refactoring](https://amzn.to/37mS8iT) (Martin Fowler)
 
 ## Library:
 * [How Will You Measure Your Life](https://amzn.to/2v4wtyL) (Clayton Christensen)
-* [Refactoring](https://amzn.to/37mS8iT) (Martin Fowler)
 * [Working Effectively with Legacy Code](https://amzn.to/2Hk8vSx) (Michael Feathers)
 * [Design Patterns](https://amzn.to/37nBBek) (Erich Gamma)
 * [Design of Everyday Things](https://amzn.to/37mSvKj) (Don Norman)
