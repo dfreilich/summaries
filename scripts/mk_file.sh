@@ -31,7 +31,7 @@ sed -i "" "s|Link|${Link}|g" ${NEW_FILE}
 sed -i "" "s|Author|${Author}|g" ${NEW_FILE}
 
 for (( i = 1; i <= ${Chapters}; i++ )) ; do
-    printf "## Chapter ${i}\n\n" >> ${NEW_FILE}
+    printf "## Chapter ${i}: \n\n" >> ${NEW_FILE}
 done
 
 echo "Finished writing to ${NEW_FILE}"
