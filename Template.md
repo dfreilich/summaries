@@ -1,6 +1,6 @@
 <!-- omit in toc -->
 # [Title](Link)
-> *By AUTHOR*
+> *By Author*
 
 <!-- toc -->
 
