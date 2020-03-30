@@ -1,5 +1,5 @@
 <!-- omit in toc -->
-# [CleanCoder](https://amzn.to/38o5blj)
+# [Clean Coder](https://amzn.to/38o5blj)
 > *By Robert Martin*
 
 <!-- toc -->
@@ -23,6 +23,8 @@
 <!-- tocstop -->
 
 ## Summary
+This book, a sequel to [Clean Code](CleanCode.md), seems to focus much less on the specifics of code management, and more about how a good professional coder should act and behave.
+
 ## Chapter 1: Professionalism
 
 ## Chapter 2: Saying No
