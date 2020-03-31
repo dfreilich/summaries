@@ -2,6 +2,7 @@
 # [Clean Coder](https://amzn.to/38o5blj)
 > *By Robert Martin*
 
+ Table of Contents:
 <!-- toc -->
 
 - [Summary](#summary)
