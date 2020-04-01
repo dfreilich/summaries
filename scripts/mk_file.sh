@@ -34,6 +34,8 @@ for (( i = 1; i <= ${Chapters}; i++ )) ; do
     printf "## Chapter ${i}: \n\n" >> ${NEW_FILE}
 done
 
+printf "## Best Quotes: \n\n" >> ${NEW_FILE}
+
 echo "Finished writing to ${NEW_FILE}"
 
 ./scripts/generate_toc.sh ${NEW_FILE}

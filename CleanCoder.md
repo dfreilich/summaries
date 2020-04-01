@@ -20,6 +20,7 @@
 - [Chapter 12: Collaboration](#chapter-12-collaboration)
 - [Chapter 13: Teams and Projects](#chapter-13-teams-and-projects)
 - [Chapter 14: Mentoring, Apprenticeship, and Craftsmanship](#chapter-14-mentoring-apprenticeship-and-craftsmanship)
+- [Best Quotes](#best-quotes)
 
 <!-- tocstop -->
 
@@ -53,3 +54,5 @@ This book, a sequel to [Clean Code](CleanCode.md), seems to focus much less on t
 ## Chapter 13: Teams and Projects
 
 ## Chapter 14: Mentoring, Apprenticeship, and Craftsmanship
+
+## Best Quotes
