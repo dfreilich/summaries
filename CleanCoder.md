@@ -21,6 +21,7 @@
 - [Chapter 13: Teams and Projects](#chapter-13-teams-and-projects)
 - [Chapter 14: Mentoring, Apprenticeship, and Craftsmanship](#chapter-14-mentoring-apprenticeship-and-craftsmanship)
 - [Best Quotes](#best-quotes)
+  - [Chapter 1: Professionalism](#chapter-1-professionalism-1)
 
 <!-- tocstop -->
 
@@ -28,6 +29,8 @@
 This book, a sequel to [Clean Code](CleanCode.md), seems to focus much less on the specifics of code management, and more about how a good professional coder should act and behave.
 
 ## Chapter 1: Professionalism
+There are many different elements to professionalism. At its most basic, it is about taking responsibility for your work by:
+* Do No Harm &rarr; We are being paid to create software that works just like it should. We harm the function of our software when we create bugs. Therefore, in order to be professional, we must not create bugs. This isn't saying you have to be perfect, but **you have to be responsible for your imperfections**. You have to **apologize**, but **apologies are insufficient**. ***You can't make the same errors over and over. As you mature, your error rate should rapidly decrease towards the asymptote of zero***.
 
 ## Chapter 2: Saying No
 
@@ -56,3 +59,7 @@ This book, a sequel to [Clean Code](CleanCode.md), seems to focus much less on t
 ## Chapter 14: Mentoring, Apprenticeship, and Craftsmanship
 
 ## Best Quotes
+### Chapter 1: Professionalism
+> We harm the function of our software when we create bugs. Therefore, in order to be professional, we must not create bugs. (p. 11)
+
+> You must be responsible for your imperfections. The fact that bugs will certainly occur in your code does not mean you aren't responsible for them. The fact that the task is to write perfect software is virtually impossibly, does not mean you aren't responsible for the imperfect. (p. 12)
