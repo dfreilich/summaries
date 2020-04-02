@@ -31,6 +31,9 @@ This book, a sequel to [Clean Code](CleanCode.md), seems to focus much less on t
 ## Chapter 1: Professionalism
 There are many different elements to professionalism. At its most basic, it is about taking responsibility for your work by:
 * Do No Harm &rarr; We are being paid to create software that works just like it should. We harm the function of our software when we create bugs. Therefore, in order to be professional, we must not create bugs. This isn't saying you have to be perfect, but **you have to be responsible for your imperfections**. You have to **apologize**, but **apologies are insufficient**. ***You can't make the same errors over and over. As you mature, your error rate should rapidly decrease towards the asymptote of zero***.
+* Know How It works &rarr; Know how your code works, by testing it again, and again, and again. Use TDD to ensure that your code is testable, and make sure that coverage is asymptotically close to 100%. As a result of this, QA or Users should find nothing; and if they do, be ready to apologize, and then figure out why those bugs escaped your notice, and do something to ensure that it doesn't happen again.
+* Use Automated QA &rarr; Essentially, you should be using a CI/CD system that continuously tests your code, and takes care of releasing it for you, or getting it very close with little effort while testing everything.
+* Enable Change &rarr; ***You must be able to make changes to your code without exorbitant costs.*** The fundamental assumption underlying all software projects is that software is easy to change. If you violate this assumption by creating inflexible structures, then you undercut the economic model that the entire industry is based on. *If you want your software to be flexible, you have to flex it.* Make small changes all the time to your code (the "Boy Scout Rule", or *merciless refactoring*). You can only do this if you are sure that the code will work, because you have a very very rigorous suite of tests, so make sure that exists.
 
 ## Chapter 2: Saying No
 
@@ -63,3 +66,5 @@ There are many different elements to professionalism. At its most basic, it is a
 > We harm the function of our software when we create bugs. Therefore, in order to be professional, we must not create bugs. (p. 11)
 
 > You must be responsible for your imperfections. The fact that bugs will certainly occur in your code does not mean you aren't responsible for them. The fact that the task is to write perfect software is virtually impossibly, does not mean you aren't responsible for the imperfect. (p. 12)
+
+> If you want your software to be flexible, you have to flex it. (p. 15)
