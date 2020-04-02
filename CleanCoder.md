@@ -35,6 +35,22 @@ There are many different elements to professionalism. At its most basic, it is a
 * Use Automated QA &rarr; Essentially, you should be using a CI/CD system that continuously tests your code, and takes care of releasing it for you, or getting it very close with little effort while testing everything.
 * Enable Change &rarr; ***You must be able to make changes to your code without exorbitant costs.*** The fundamental assumption underlying all software projects is that software is easy to change. If you violate this assumption by creating inflexible structures, then you undercut the economic model that the entire industry is based on. *If you want your software to be flexible, you have to flex it.* Make small changes all the time to your code (the "Boy Scout Rule", or *merciless refactoring*). You can only do this if you are sure that the code will work, because you have a very very rigorous suite of tests, so make sure that exists.
 
+You also have to take responsibility for your career, by developing your:
+* Work Ethic &rarr; Your career is *your* responsibility. If your employer trains you, sends you to conferences, or buys you books, those are great favors, but don't think that this is your employer's responsibility. You should be spending 20 hours a week reading, practicing, enhancing in some way your career. This is a recipe to avoid burnout, because you should be doing something to reinforce your passion for the field, and rediscovering the fun you have!
+* Knowledge of the Field &rarr; Simply put, you should know a whole bunch about the Comp-Sci field than you do. A minimal list of things every software professional should be conversant with is:
+  * Design Patterns &rarr; You should be able to describe all 24 patterns in [Design Patterns: Elements of Reusable Object-Oriented Software](https://en.wikipedia.org/wiki/Design_Patterns)
+  * Design Principles &rarr; You should know the [**SOLID** principles](https://en.wikipedia.org/wiki/SOLID), and understand the component principles. (Just as a refresher, **SOLID** stands for: **S**ingle Responsibility Principle, **O**pen/Closed Principle, **L**iskov Substitution Principle, **I**nterface Segregation Principle, **D**ependency Inversion Principle.)
+  * Methods &rarr; Understand XP, Scrum, Lean, Kanban, Waterfall, and more methods
+  * Disciplines &rarr; Practice TDD, OO design, structured programming, and more
+  * Artifacts &rarr; Know how to use UML, DFD's, Structure Charts, and more
+* Continuous Learning &rarr; Much like you wouldn't visit a doctor or tax lawyer who don't stay current with current practices, developers have to stay current. Read books, articles, blogs and more.
+* Practice &rarr; True professionals work hard to keep their skills sharp and ready. Do a simple repetitive exercise, like the Bowling Game kata, every day in different languages
+* Collaboration &rarr; Professional software developers program together, practice together, design and plan together
+* Mentorship &rarr; The best way to learn is to teach. Professionals take personal responsibility for mentoring juniors. They will not let a junior flail about unsupervised.
+* Domain Knowledge &rarr; If you are creating a project in something, you must know the domain. If you are working on an accounting system, know the accounting field. There is a reasonable amount of due diligence you should engage in. Spend time with experts, and try to understand their principles and values, so you can understand the spec, and challenge specification errors.
+* Identification with Customers &rarr; Your customer and employer's problems are your problems. You need to understand them, and work towards the best solution.
+* Humility &rarr; Professionals knows his job, and takes pride in his work. However, a professional knows there are times where he will fail, and he will see himself an arrogant fool. He will never ridicule others, but will accept ridicule when it is deserved, and laugh it off when it's not. He will not demean another for making a mistake, because he knows he may be the next to fail.
+
 ## Chapter 2: Saying No
 
 ## Chapter 3: Saying Yes
