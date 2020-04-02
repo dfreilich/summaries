@@ -22,7 +22,7 @@ Table of Contents:
 * [Clean Code](https://amzn.to/37kjAOd) (Robert Martin) - [Summary](CleanCode.md)
 
 ## WIP:
-* [Clean Coder](https://amzn.to/38o5blj) (Robert Martin)
+* [Clean Coder](https://amzn.to/38o5blj) (Robert Martin) - [Summary](CleanCoder.md)
 
 ## Next Up:
 * [Refactoring](https://amzn.to/37mS8iT) (Martin Fowler)
