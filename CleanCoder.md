@@ -23,6 +23,7 @@
 - [Best Quotes](#best-quotes)
   - [Chapter 1: Professionalism](#chapter-1-professionalism-1)
   - [Chapter 2: Saying No](#chapter-2-saying-no-1)
+  - [Chapter 3: Saying Yes](#chapter-3-saying-yes-1)
 
 <!-- tocstop -->
 
@@ -58,6 +59,14 @@ Slaves are not allowed to say no. Laborers may be hesitant to say no. But profes
 Sometimes, there is cost to saying yes too much. Often stakeholders will motivate developers by telling them the app is simple, then try to add features, and push the deadline again and again.
 
 ## Chapter 3: Saying Yes
+There are very few people who, when they say something, they mean it and then actually get it done. There are some who will say things and *mean* them, but they never get it done. And there are far more people who promise things and don't even *mean* to do them.
+
+And so, when we say we do something, we should (a) actually do it, and (b) make sure the commitment is clear. You can only commit to things you have full control of, however. If you interact with other people, however, be clear on what you can do, and commit to that.
+
+You may be tempted to break discipline, and skip tests at some point, or not refactor. But this is where the professional draws the line. As a professional, he has a responsibility to maintain certain standards. His code needs to be tested, and needs to have tests. His code needs to be clean. And he has to be sure he hasn't broken anything else in the system.
+
+
+Professionals are not required to say yes to everything that is asked of them. However, they should work hard to find creative ways to make "yes" possible. When professionals say yes, they use the language of commitment so that there is no doubt about what they've promised.
 
 ## Chapter 4: Coding
 
@@ -91,3 +100,10 @@ Sometimes, there is cost to saying yes too much. Often stakeholders will motivat
 
 ### Chapter 2: Saying No
 > Slaves are not allowed to say no. Laborers may be hesitant to say no. But professionals are *expected* to say no. (p. 26)
+
+### Chapter 3: Saying Yes
+> There are very few people who, when they say something, they mean it and then actually get it done. There are some who will say things and *mean* them, but they never get it done. And there are far more people who promise things and don't even *mean* to do them. (p. 48)
+
+> As a professional, he has a responsibility to maintain certain standards. His code needs to be tested, and needs to have tests. His code needs to be clean. And he has to be sure he hasn't broken anything else in the system.  (p. 55)
+
+> Professionals are not required to say yes to everything that is asked of them. However, they should work hard to find creative ways to make "yes" possible. (p. 56)
