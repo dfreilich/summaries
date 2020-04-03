@@ -22,6 +22,7 @@
 - [Chapter 14: Mentoring, Apprenticeship, and Craftsmanship](#chapter-14-mentoring-apprenticeship-and-craftsmanship)
 - [Best Quotes](#best-quotes)
   - [Chapter 1: Professionalism](#chapter-1-professionalism-1)
+  - [Chapter 2: Saying No](#chapter-2-saying-no-1)
 
 <!-- tocstop -->
 
@@ -52,6 +53,9 @@ You also have to take responsibility for your career, by developing your:
 * Humility &rarr; Professionals knows his job, and takes pride in his work. However, a professional knows there are times where he will fail, and he will see himself an arrogant fool. He will never ridicule others, but will accept ridicule when it is deserved, and laugh it off when it's not. He will not demean another for making a mistake, because he knows he may be the next to fail.
 
 ## Chapter 2: Saying No
+Slaves are not allowed to say no. Laborers may be hesitant to say no. But professionals are *expected* to say no. If you are given a deadline that is totally unreasonable, don't say you'll try, and then deliver a bad product, or no product at all. Push back, and settle on something that works.
+
+Sometimes, there is cost to saying yes too much. Often stakeholders will motivate developers by telling them the app is simple, then try to add features, and push the deadline again and again.
 
 ## Chapter 3: Saying Yes
 
@@ -84,3 +88,6 @@ You also have to take responsibility for your career, by developing your:
 > You must be responsible for your imperfections. The fact that bugs will certainly occur in your code does not mean you aren't responsible for them. The fact that the task is to write perfect software is virtually impossibly, does not mean you aren't responsible for the imperfect. (p. 12)
 
 > If you want your software to be flexible, you have to flex it. (p. 15)
+
+### Chapter 2: Saying No
+> Slaves are not allowed to say no. Laborers may be hesitant to say no. But professionals are *expected* to say no. (p. 26)
