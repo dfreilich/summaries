@@ -24,6 +24,7 @@
   - [Chapter 1: Professionalism](#chapter-1-professionalism-1)
   - [Chapter 2: Saying No](#chapter-2-saying-no-1)
   - [Chapter 3: Saying Yes](#chapter-3-saying-yes-1)
+  - [Chapter 4: Coding](#chapter-4-coding-1)
 
 <!-- tocstop -->
 
@@ -69,6 +70,23 @@ You may be tempted to break discipline, and skip tests at some point, or not ref
 Professionals are not required to say yes to everything that is asked of them. However, they should work hard to find creative ways to make "yes" possible. When professionals say yes, they use the language of commitment so that there is no doubt about what they've promised.
 
 ## Chapter 4: Coding
+Coding is an intellectually challenging and exhausting activity, which requires a level of concentration and focus, because:
+* Your code must work
+* Your code must solve the problem set by the customer
+* Your code needs to fit into the existing system
+* Your code must be readable by other programmers, crafted in a way that it reveals your intent
+
+If you are are tired or distracted, *do not code*. First settle yourself, and only then go to code. If you are tired, agitated, anxious, you won't be able to focus on the job, and the code will be worthless. A strategy that can help is dedicate some time to working on the problem, and focus the rest of the time.
+
+Don't be snappy if you are interrupted; a professional has a polite willingness to be helpful.
+
+Debugging is a waste of time – ideally, you shouldn't be introducing any bugs that need to be fixed. If you use TDD or another discipline of equal efficacy, it's incumbent to reduce your debugging time to as close to zero as you can get it.
+
+You will be late. It happens to everyone. But make sure that people know about it in advance.
+
+There are times where we convince ourselves that we are done **enough**. We sometimes stretch the truth, in a horrible practice. That is really bad. There should be a definition of done that is required, ideally with something like automated acceptance tests.
+
+Coding is hard. You think it's easy at the beginning, but it is a very difficult task. Programming is so hard, in fact, that it is beyond the capability of one person to do it well. No matter how skilled you are, you will certainly benefit from another programmer's thoughts and ideas. Similarly, as a professional you are honor bound to offer that help whenever it is needed. You should be conscious of your teammates, and offer to help people. And when someone offers you help, be gracious about it - accept it gratefully, and give yourself to that help.
 
 ## Chapter 5: Test Driven Development
 
@@ -107,3 +125,6 @@ Professionals are not required to say yes to everything that is asked of them. H
 > As a professional, he has a responsibility to maintain certain standards. His code needs to be tested, and needs to have tests. His code needs to be clean. And he has to be sure he hasn't broken anything else in the system.  (p. 55)
 
 > Professionals are not required to say yes to everything that is asked of them. However, they should work hard to find creative ways to make "yes" possible. (p. 56)
+
+### Chapter 4: Coding
+> Programming is so hard, in fact, that it is beyond the capability of one person to do it well. No matter how skilled you are, you will certainly benefit from another programmer's thoughts and ideas. (p. 74)
