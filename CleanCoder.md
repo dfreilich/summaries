@@ -25,6 +25,7 @@
   - [Chapter 2: Saying No](#chapter-2-saying-no-1)
   - [Chapter 3: Saying Yes](#chapter-3-saying-yes-1)
   - [Chapter 4: Coding](#chapter-4-coding-1)
+  - [Chapter 5: TDD](#chapter-5-tdd)
 
 <!-- tocstop -->
 
@@ -89,7 +90,19 @@ There are times where we convince ourselves that we are done **enough**. We some
 Coding is hard. You think it's easy at the beginning, but it is a very difficult task. Programming is so hard, in fact, that it is beyond the capability of one person to do it well. No matter how skilled you are, you will certainly benefit from another programmer's thoughts and ideas. Similarly, as a professional you are honor bound to offer that help whenever it is needed. You should be conscious of your teammates, and offer to help people. And when someone offers you help, be gracious about it - accept it gratefully, and give yourself to that help.
 
 ## Chapter 5: Test Driven Development
+TDD works. I don't think surgeons should have to defend hand-washing, and I don't think programmers should have to defend TDD. The three laws of TDD are:
+1. You can't write production code until you have written a failing unit test
+2. You can't write more of a unit test than is sufficient to fail – and not compiling is failing
+3. You are not allowed to write more production code than is sufficient to pass the currently failing unit test.
 
+The cycle time for this is, perhaps, thirty seconds long. The benefits of TDD are:
+* Certainty &rarr; By the end, you will have dozens and hundreds of tests. If you need to change anything, you can just run the unit tests to make sure that it didn't break anything.
+* Defect Injection Rate &rarr; You significantly reduce the number of defects in code when you use TDD.
+* Courage &rarr; You have the courage to make changes in your code, because you know that you can test to ensure that nothing was broken
+* Documentation &rarr; Every unit test is a description on how the system should be used. There should be a unit test that shows how to create every object in the system, a unit test that describes how to call every function in the system, and more. In short, **for anything you need to know, there should be a unit test that describes it in detail**
+* Design &rarr; Your code will be designed to be easily tested
+
+At the same time, TDD isn't perfect – **you can still write bad code, even if you write your tests first. Indeed, you can write bad tests.**
 ## Chapter 6: Practicing
 
 ## Chapter 7: Acceptance Testing
@@ -128,3 +141,10 @@ Coding is hard. You think it's easy at the beginning, but it is a very difficult
 
 ### Chapter 4: Coding
 > Programming is so hard, in fact, that it is beyond the capability of one person to do it well. No matter how skilled you are, you will certainly benefit from another programmer's thoughts and ideas. (p. 74)
+
+### Chapter 5: TDD
+> I don't think surgeons should have to defend hand-washing, and I don't think programmers should have to defend TDD. (p. 79)
+
+> How can you consider yourself to be a professional if you do not *know* that all your code works? How can you know ala your code works if you don't test it every time you make a change? How can you test it every time you make a change if you don't have automated unit tests with very high coverage? How can you get automated unit tests with very high coverage, without practicing TDD? (p. 79)
+
+> You can still write bad code, even if you write your tests first. Indeed, you can write bad tests. (p. 84)
