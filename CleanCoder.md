@@ -26,6 +26,7 @@
   - [Chapter 3: Saying Yes](#chapter-3-saying-yes-1)
   - [Chapter 4: Coding](#chapter-4-coding-1)
   - [Chapter 5: TDD](#chapter-5-tdd)
+  - [Chapter 6: Practicing](#chapter-6-practicing-1)
 
 <!-- tocstop -->
 
@@ -104,6 +105,9 @@ The cycle time for this is, perhaps, thirty seconds long. The benefits of TDD ar
 
 At the same time, TDD isn't perfect – **you can still write bad code, even if you write your tests first. Indeed, you can write bad tests.**
 ## Chapter 6: Practicing
+Doing anything quickly requires practice. Making decisions quickly means being able to recognize a vast number of situations and problems, and simply know what to do to address them.
+
+Coding Dojo's, or *kata*'s, are useful to practice. There are a number of them that are nice to practice. A kata is a precise set of choreographed keystrokes that simulate solving a programming problem. You aren't solving it, because you know the solution
 
 ## Chapter 7: Acceptance Testing
 
@@ -148,3 +152,6 @@ At the same time, TDD isn't perfect – **you can still write bad code, even if 
 > How can you consider yourself to be a professional if you do not *know* that all your code works? How can you know ala your code works if you don't test it every time you make a change? How can you test it every time you make a change if you don't have automated unit tests with very high coverage? How can you get automated unit tests with very high coverage, without practicing TDD? (p. 79)
 
 > You can still write bad code, even if you write your tests first. Indeed, you can write bad tests. (p. 84)
+
+### Chapter 6: Practicing
+> The fact that some programmers do wait for builds is tragic, and indicative of carelessness. In today's world, build times should be measured in seconds, not minutes, and certainly not hours.
