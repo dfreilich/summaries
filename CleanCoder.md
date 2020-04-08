@@ -107,7 +107,13 @@ At the same time, TDD isn't perfect – **you can still write bad code, even if 
 ## Chapter 6: Practicing
 Doing anything quickly requires practice. Making decisions quickly means being able to recognize a vast number of situations and problems, and simply know what to do to address them.
 
-Coding Dojo's, or *kata*'s, are useful to practice. There are a number of them that are nice to practice. A kata is a precise set of choreographed keystrokes that simulate solving a programming problem. You aren't solving it, because you know the solution
+Coding Dojo's, or *kata*'s, are useful to practice. There are a number of them that are nice to practice. A kata is a precise set of choreographed keystrokes that simulate solving a programming problem. You aren't solving it, because you know the solution already; instead, you are practicing the movements and decisions involved in solving the problem. Some kata's are at:
+* https://katas.softwarecraftsmanship.org/
+* http://codekata.com/
+* [Wordwrap](https://ccd-school.de/en/coding-dojo/application-katas/wordwrap/)
+
+You can do it various ways, with partners or by yourself. It is also important to practice on your own time, by contributing to open source projects in another language, let's say.
+
 
 ## Chapter 7: Acceptance Testing
 
@@ -154,4 +160,8 @@ Coding Dojo's, or *kata*'s, are useful to practice. There are a number of them t
 > You can still write bad code, even if you write your tests first. Indeed, you can write bad tests. (p. 84)
 
 ### Chapter 6: Practicing
-> The fact that some programmers do wait for builds is tragic, and indicative of carelessness. In today's world, build times should be measured in seconds, not minutes, and certainly not hours.
+> The fact that some programmers do wait for builds is tragic, and indicative of carelessness. In today's world, build times should be measured in seconds, not minutes, and certainly not hours. (p. 88)
+
+> They practice on their own time because they realize that it is their responsibility - and not their employer's - to keep their skills sharp. (p. 94)
+
+> Practicing is what you do when you *aren't* getting paid. You do it so that you *will* be paid, and paid *well*. (p. 94)
