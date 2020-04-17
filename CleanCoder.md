@@ -27,6 +27,7 @@
   - [Chapter 4: Coding](#chapter-4-coding-1)
   - [Chapter 5: TDD](#chapter-5-tdd)
   - [Chapter 6: Practicing](#chapter-6-practicing-1)
+  - [Chapter 7: Acceptance Testing](#chapter-7-acceptance-testing-1)
 
 <!-- tocstop -->
 
@@ -114,8 +115,12 @@ Coding Dojo's, or *kata*'s, are useful to practice. There are a number of them t
 
 You can do it various ways, with partners or by yourself. It is also important to practice on your own time, by contributing to open source projects in another language, let's say.
 
-
 ## Chapter 7: Acceptance Testing
+One of the most common communication issues between programmers and business is the requirements. The communication of requirements is extremely difficult, and the process is fraught with error. Both business and programmers try to give precision prematurely. The more precise you make your requirements, the less relevant they become as the system is implemented.
+
+Professional developers understand that estimates can, and should be made based o nlow precision requirements, and recognize that those estimates are *estimates*. To reinforce this, professional developers always include error bars with their estimates, so that the business understands the uncertainty.
+
+Acceptance tests are tests written by a collaboration of the stakeholders and the programmers, in order to define when a requirement is *done*. One of the most common ambiguities we face is the ambiguity of done. But for professional developers, done means all code written, all tests pass, QA and the stakeholders have accepted. The easiest way to specify that is through automated acceptance tests. The purpose of acceptance tests is communication, clarity, and precision.
 
 ## Chapter 8: Testing Strategies
 
@@ -165,3 +170,6 @@ You can do it various ways, with partners or by yourself. It is also important t
 > They practice on their own time because they realize that it is their responsibility - and not their employer's - to keep their skills sharp. (p. 94)
 
 > Practicing is what you do when you *aren't* getting paid. You do it so that you *will* be paid, and paid *well*. (p. 94)
+
+### Chapter 7: Acceptance Testing
+> The more precise you make your requirements, the less relevant they become as the system is implemented. (p. 98)
