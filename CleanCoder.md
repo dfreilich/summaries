@@ -125,6 +125,14 @@ Acceptance tests are tests written by a collaboration of the stakeholders and th
 The purpose of acceptance tests isn't testing; they are documents first, and tests second. They formally document the design, structure, and behavior of the system. Make sure that the tests are run several times a day, through a continuous integration system, triggered by your source code control system. A broken build should be an emergency.
 
 ## Chapter 8: Testing Strategies
+QA should find nothing wrong. It is unlikely that this is the case, but the development team should try to ensure that QA finds nothing.
+
+There should be a hierarchy/pyramid of testing: Unit tests, component tests, integration tests, system tests, and exploratory tests
+* Unit Tests &rarr; Unit tests should be written for programmers, by programmers, in the programming language of the system. This specifies the system at the lowest level. Provide as close to 100% coverage as is practical
+* Component Tests &rarr; These are written against individual components, serving as acceptance tests for components. It should test one component, and decouple any other system components using mocking and test-doubling. These should cover close to 50% of the system.
+* Integration tests &rarr; These tests many components together. They are *choreography* tests, ensuring that the components work well together.
+* System Tests &rarr; These are automated tests executing against the entire integrated system. They ensure that the system works appropriately, and the parts interoperate appropriately.
+* Manual Exploratory Tests &rarr; These aren't automated or scripted. They should explore the system for unexpected behaviors, while confirming expected behaviors.
 
 ## Chapter 9: Time Management
 
