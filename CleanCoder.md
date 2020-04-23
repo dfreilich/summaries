@@ -120,7 +120,9 @@ One of the most common communication issues between programmers and business is 
 
 Professional developers understand that estimates can, and should be made based o nlow precision requirements, and recognize that those estimates are *estimates*. To reinforce this, professional developers always include error bars with their estimates, so that the business understands the uncertainty.
 
-Acceptance tests are tests written by a collaboration of the stakeholders and the programmers, in order to define when a requirement is *done*. One of the most common ambiguities we face is the ambiguity of done. But for professional developers, done means all code written, all tests pass, QA and the stakeholders have accepted. The easiest way to specify that is through automated acceptance tests. The purpose of acceptance tests is communication, clarity, and precision.
+Acceptance tests are tests written by a collaboration of the stakeholders and the programmers, in order to define when a requirement is *done*. One of the most common ambiguities we face is the ambiguity of done. But for professional developers, done means all code written, all tests pass, QA and the stakeholders have accepted. The easiest way to specify that is through automated acceptance tests. The purpose of acceptance tests is communication, clarity, and precision. Acceptance tests should *always* be automated, in order to ensure that the code works. Professional developers take responsibility for their part in ensuring that acceptance tests are automated.
+
+The purpose of acceptance tests isn't testing; they are documents first, and tests second. They formally document the design, structure, and behavior of the system. Make sure that the tests are run several times a day, through a continuous integration system, triggered by your source code control system. A broken build should be an emergency.
 
 ## Chapter 8: Testing Strategies
 
