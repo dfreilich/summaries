@@ -28,6 +28,7 @@
   - [Chapter 5: TDD](#chapter-5-tdd)
   - [Chapter 6: Practicing](#chapter-6-practicing-1)
   - [Chapter 7: Acceptance Testing](#chapter-7-acceptance-testing-1)
+  - [Chapter 9: Time Management](#chapter-9-time-management-1)
 
 <!-- tocstop -->
 
@@ -135,6 +136,20 @@ There should be a hierarchy/pyramid of testing: Unit tests, component tests, int
 * Manual Exploratory Tests &rarr; These aren't automated or scripted. They should explore the system for unexpected behaviors, while confirming expected behaviors.
 
 ## Chapter 9: Time Management
+Meetings cost about $200/hour/attendee, taking into account salaries, facilities costs, etc. There are two truths about meetings:
+1. Meetings are necessary
+2. Meetings are huge time wasters
+
+Professionals are aware that their time is precious; therefore, they actively resist attending meetings that don't have an immediate and significant benefit. It is unprofessional to go to too many meetings. The person inviting you to a meeting isn't responsible for managing your time. Only *you* can do that.
+
+One of the most important duties of your  manager is to keep you *out* of meetings. A good manager will be more than willing to defend your decision to decline attendance because that manager is just as concerned about your time as you are.
+
+If you find that a meeting isn't relevant, leave. find a way to politely exit that meeting. If you are asked to go to a meeting, have an agenda. Stand Up Meetings should take no more than 1 minute a person. Iteration planning meetings should proceed quickly, with no more than 5 or 10 minutes per any specific item. Retros should be scheduled 45 minutes before the end of day. Any argument that can't be settled in 5 minutes can't be settled by arguing.
+
+Make sure you have enough energy/focus for the day. Get sleep, recharge however you work best, do physical activity.
+
+Use techniques to manage your time. For instance, the *Pomodoro Technique*. Set a timer for 25 minutes, and don't allow any interruptions. Then, stop immediately, with a break of 5 minutes or so. Every 4 times (2 hours), take a longer break of 30 minutes or so.
+
 
 ## Chapter 10: Estimation
 
@@ -183,3 +198,10 @@ There should be a hierarchy/pyramid of testing: Unit tests, component tests, int
 
 ### Chapter 7: Acceptance Testing
 > The more precise you make your requirements, the less relevant they become as the system is implemented. (p. 98)
+
+### Chapter 9: Time Management
+> The person inviting you to a meeting isn't responsible for managing your time. Only *you* can do that. (p. 123)
+
+> One of the most important duties of your  manager is to keep you *out* of meetings. A good manager will be more than willing to defend your decision to decline attendance because that manager is just as concerned about your time as you are. (p. 123)
+
+> Rule of Holes: *When you are in one, stop digging* (p. 131)
