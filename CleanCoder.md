@@ -150,8 +150,23 @@ Make sure you have enough energy/focus for the day. Get sleep, recharge however 
 
 Use techniques to manage your time. For instance, the *Pomodoro Technique*. Set a timer for 25 minutes, and don't allow any interruptions. Then, stop immediately, with a break of 5 minutes or so. Every 4 times (2 hours), take a longer break of 30 minutes or so.
 
-
 ## Chapter 10: Estimation
+At it's core, people view estimates in different ways, which lead to profound issues:
+* Businesses view estimates as commitments. It is ***certain***.
+* Developers view estimates as guesses. For developers, an estimate isn't a number, it is a *distribution*
+
+Professionals draw a clear distinctionb etween estimates and commitments. They don't commit unless they know for certain that they will succeed. They are careful not to make any *implied* commitments, and make it clear that they are conveying a distribution.
+
+One useful scheme for estimation is **PERT** (Program Evaluation and Review Technique), where you give three numbers:
+* **O** &rarr; Optimistic Estimate. This is a wildly optimistic number, if everything goes right
+* **N** &rarr; Nominal Estimates. This is the estimate with the greatest chance of success
+* **P** &rarr; Pessimistic Estimate. This is wildly pessimistic.
+
+Using those three numbers, yo con describe the probability distribution and standard deviation of the task.
+
+Whether through PERT or another system, Software professionals are very careful to set reasonable expectations despite the pressure to try to go fast.
+
+You should also take advantage of the *Law of Large Numbers*, which implies that if you break up a large task into many smaller tasks and estimate them independently, the sum of the estimates will be more accurate than the estimate of the large task.
 
 ## Chapter 11: Pressure
 
