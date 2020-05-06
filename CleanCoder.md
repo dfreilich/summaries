@@ -29,6 +29,7 @@
   - [Chapter 6: Practicing](#chapter-6-practicing-1)
   - [Chapter 7: Acceptance Testing](#chapter-7-acceptance-testing-1)
   - [Chapter 9: Time Management](#chapter-9-time-management-1)
+  - [Chapter 11: Pressure](#chapter-11-pressure-1)
 
 <!-- tocstop -->
 
@@ -169,6 +170,19 @@ Whether through PERT or another system, Software professionals are very careful 
 You should also take advantage of the *Law of Large Numbers*, which implies that if you break up a large task into many smaller tasks and estimate them independently, the sum of the estimates will be more accurate than the estimate of the large task.
 
 ## Chapter 11: Pressure
+The best way to stay calm under pressure is to avoid the situations that cause pressure. Some ways to do that are:
+* Avoid committing to deadlines that we aren't sure we can meet. Make sure the risk of deadlines is quantified and clear to the business, so they can manage it appropriately.
+  * There are occasionally commitments made for us. When this happens, we are honor bound to help the business find a way to meet those commitments. However, we aren't honor bound to accept the commitments.
+* Stay clean. Professionals realize the "quick and dirty" is an oxymoron. Dirty always means slow!
+* Choose disciplines that you feel comfortable following in a crisis. Then follow them all the time. Don't change your behavior when the crunch comes. If your disciplines are the best way to work, then they should be followed even in the depth of a crisis.
+
+If you end up in a pressured situation, however, you need to manage it. Some tools for that are:
+* Don't panic. Slow down, and think the problem through.
+* Communicate to your team and superiors that you are in trouble. Avoid creating surprises.
+* Trust your disciplines. If you follow TDD, write more tests than usual. If you are a merciless refactorer, refactor even more.
+* Get help. Utilize pair programming, to get done faster with fewer defects.
+
+By the same token, if you see someone else who's under pressure, offer to pair with them, and help them out of the hole they are in.
 
 ## Chapter 12: Collaboration
 
@@ -220,3 +234,10 @@ You should also take advantage of the *Law of Large Numbers*, which implies that
 > One of the most important duties of your  manager is to keep you *out* of meetings. A good manager will be more than willing to defend your decision to decline attendance because that manager is just as concerned about your time as you are. (p. 123)
 
 > Rule of Holes: *When you are in one, stop digging* (p. 131)
+
+### Chapter 11: Pressure
+> The best way to stay calm under pressure is to avoid the situations that cause pressure. (p. 151)
+
+> [There are occasionally commitments made for us...] When this happens, we are honor bound to help the business find a way to meet those commitments. However, we aren't honor bound to accept the commitments. (p. 152)
+
+> Choose disciplines that you feel comfortable following in a crisis. Then follow them all the time... Don't change your behavior when the crunch comes. If your disciplines are the best way to work, then they should be followed even in the depth of a crisis. (p. 153)
