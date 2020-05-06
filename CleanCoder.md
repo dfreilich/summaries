@@ -32,6 +32,7 @@
   - [Chapter 11: Pressure](#chapter-11-pressure-1)
   - [Chapter 12: Collaboration](#chapter-12-collaboration-1)
   - [Chapter 13: Teams and Projects](#chapter-13-teams-and-projects-1)
+  - [Chapter 14: Mentoring, Apprenticeship, and Craftmanship](#chapter-14-mentoring-apprenticeship-and-craftmanship)
 
 <!-- tocstop -->
 
@@ -203,6 +204,11 @@ A gelled team can work miracles. They anticipate each other, cover for each othe
 You can't have individual programmers join multiple projects simultaneously, but you can point gelled teams in multiple projects nad have them take it over. Teams are harder to build than projects. Therefore, it is better to form persistent teams that move together from one project ot the next, and can take on more than one project at a time. The goal in forming a team is to give that team enough time to gel, and then keep it together as an engine for getting many projects done.
 
 ## Chapter 14: Mentoring, Apprenticeship, and Craftsmanship
+Even the best CS degree programs do not typically prepare the young graduate for what they will find in industry. Somehow, the software development industry has gotten the idea that programmers are programmers, and that once you graduate you can code. Given that software is important, it is important to have a reasonable period of training and supervised practice. It is time for those of us in the software industry to face the fact that guiding the next batch of software developers to maturity will fall to us, not to the universities.
+
+Professional values and technical acumen must be taught, nurtured, coddled and encultured. The ideal is to train people into craftsman. A craftsman is someone who works quickly, but without rushing, who provides reasonable estimates and meets commitments. A craftsman knows when to say no, but tries hard to say yes. A craftsman is a professional.
+
+However, you can't convince people to be craftsman. You must make it observable. You act as a role model. Become a craftsman first, and let your craftsmanship show. Then just let that influence people.
 
 ## Best Quotes
 ### Chapter 1: Professionalism
@@ -269,3 +275,8 @@ You can't have individual programmers join multiple projects simultaneously, but
 > Teams are harder to build than projects. Therefore, it is better to form persistent teams that move together from one project to the next, and can take on more than one project at a time. (p. 171)
 
 >  The goal in forming a team is to give that team enough time to gel, and then keep it together as an engine for getting many projects done. (p. 171)
+
+### Chapter 14: Mentoring, Apprenticeship, and Craftmanship
+> Somehow, the software development industry has gotten the idea that programmers are programmers, and that once you graduate you can code. (p. 181)
+
+> Professional values and technical acumen must be taught, nurtured, coddled and encultured. (p. 191)
