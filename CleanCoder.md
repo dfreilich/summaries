@@ -30,6 +30,8 @@
   - [Chapter 7: Acceptance Testing](#chapter-7-acceptance-testing-1)
   - [Chapter 9: Time Management](#chapter-9-time-management-1)
   - [Chapter 11: Pressure](#chapter-11-pressure-1)
+  - [Chapter 12: Collaboration](#chapter-12-collaboration-1)
+  - [Chapter 13: Teams and Projects](#chapter-13-teams-and-projects-1)
 
 <!-- tocstop -->
 
@@ -185,8 +187,20 @@ If you end up in a pressured situation, however, you need to manage it. Some too
 By the same token, if you see someone else who's under pressure, offer to pair with them, and help them out of the hole they are in.
 
 ## Chapter 12: Collaboration
+We didn't like programmers because we like working with people. As a rule, we find interpersonal relationships messy and unpredictable. While that may be an overgeneralization, the group average tends in that direction. But tough luck. Programming is all about working with people. We need to work with our business, and we need to work with each other.
+
+The first responsibility of a professional programmer is to meet the needs of your employer. That means collaborating with managers and other team members to *deeply understand* the business goals. You need to understand why you are writing the code you are writing, and how the business that employs you will benefit from it.
+
+Secondly, you also need to interact with your team. One of the worst symptoms of a dysfunctional team is when each programmer builds a wall around his code and refuses to let other programmers near it. It is far better to break down all walls of code ownership, and have the **team** own all the code.
+
+Professionals practice pair programming. Why? For some problems, it is the most efficient way to solve them. It is also the best way to share knowledge with each other. Professionals don't create knowledge silos, but learn the different parts of the system and business by pairing with each other.
 
 ## Chapter 13: Teams and Projects
+It makes no sense to tell a programmer to devote half their time to two different projects, especially when the two projects have two different PMs and more.
+
+A gelled team can work miracles. They anticipate each other, cover for each other, support each other, and demand the best from each other. They make things happen. A gelled team usually consists of about a dozen people, a mixture of programmers (around 7), testers (2), and analysts (2) with a project manager. It may take time for a team like this to come together, but once it happens, it's magic.
+
+You can't have individual programmers join multiple projects simultaneously, but you can point gelled teams in multiple projects nad have them take it over. Teams are harder to build than projects. Therefore, it is better to form persistent teams that move together from one project ot the next, and can take on more than one project at a time. The goal in forming a team is to give that team enough time to gel, and then keep it together as an engine for getting many projects done.
 
 ## Chapter 14: Mentoring, Apprenticeship, and Craftsmanship
 
@@ -241,3 +255,17 @@ By the same token, if you see someone else who's under pressure, offer to pair w
 > [There are occasionally commitments made for us...] When this happens, we are honor bound to help the business find a way to meet those commitments. However, we aren't honor bound to accept the commitments. (p. 152)
 
 > Choose disciplines that you feel comfortable following in a crisis. Then follow them all the time... Don't change your behavior when the crunch comes. If your disciplines are the best way to work, then they should be followed even in the depth of a crisis. (p. 153)
+
+### Chapter 12: Collaboration
+> We didn't like programmers because we like working with people. As a rule, we find interpersonal relationships messy and unpredictable. (p. 159)
+
+> The first responsibility of a professional programmer is to meet the needs of your employer. That means collaborating with managers and other team members to *deeply understand* the business goals. You need to understand why you are writing the code you are writing, and how the business that employs you will benefit from it. (p. 160)
+
+> Programming is all about working with people. We need to work with our business, and we need to work with each other. (p. 166)
+
+### Chapter 13: Teams and Projects
+> There is something truly magical about a gelled team. They can work miracles. They anticipate each other, cover for each other, support each other, and demand the best from each other. They make things happen. (p. 168)
+
+> Teams are harder to build than projects. Therefore, it is better to form persistent teams that move together from one project to the next, and can take on more than one project at a time. (p. 171)
+
+>  The goal in forming a team is to give that team enough time to gel, and then keep it together as an engine for getting many projects done. (p. 171)
